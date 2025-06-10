@@ -1581,31 +1581,6 @@ function KillEffectPlayer(entity)
         end);
     end
 end
-
-RegisterNetEvent("killer:showStreak", function(data)
-    if Config.Server.Settings.killmarker then
-        SendNUIMessage({
-            a = 'showKillerUI',
-            money = data.money,
-            midrolled = data.midrolled,
-
-            killer = {
-                name = data.killer.name,
-                points = data.killer.points
-            },
-            deathplayer = {
-                name = data.deathplayer.name,
-                points = data.deathplayer.points
-            }
-        })
-    end
-
-    SetEntityHealth(PlayerPedId(), 200)
-    SetPedArmour(PlayerPedId(), 100)
-
-    KillEffectPlayer(GetPlayerPed(GetPlayerFromServerId(data.deathplayer.id)))
-end);
-
 -----------------------------------------------------------------------------
 
 -------------------------------------PVP-------------------------------------
@@ -6855,76 +6830,6 @@ function spawnPeds(peds)
     end);
 end
 
-local function spawnMidrollPed(peds)
-    for _, spawnedPed in next, (ModrollPeds) do
-        if spawnedPed.ped and DoesEntityExist(spawnedPed.ped) then
-            DeleteEntity(spawnedPed.ped)
-        end
-    end
-    ModrollPeds = {}
-
-    Wait(500)
-
-    CreateThread(function()
-        while true do
-            local sleep = 500
-
-            local pedModel = GetHashKey("mp_m_freemode_01")
-            RequestModel(pedModel)
-
-            while not HasModelLoaded(pedModel) do
-                Wait(1)
-            end
-
-            for _, pedData in next, (peds) do
-                pedData.position = Config.Server.ScorePeds.midrollPed[1]
-
-                if Config.Server.safezone.toggle then
-                    sleep = 0
-
-                    if not pedData.Loaded then
-                        pedData.ped = CreatePed(4, pedModel, pedData.position.x, pedData.position.y, pedData.position.z,
-                            pedData.position.w, false, true)
-                        FreezeEntityPosition(pedData.ped, true)
-                        SetEntityInvincible(pedData.ped, true)
-                        SetBlockingOfNonTemporaryEvents(pedData.ped, true)
-
-                        if pedData.rank == 1 then
-                            if not HasAnimDictLoaded('rcmbarry') then
-                                RequestAnimDict('rcmbarry')
-                                repeat Wait(1) until HasAnimDictLoaded('rcmbarry')
-                            end
-                            TaskPlayAnim(pedData.ped, 'rcmbarry', 'base', 8.0, -8.0, -1, 1, 0, false, false, false)
-                        else
-                            TaskStartScenarioInPlace(pedData.ped, pedData.scenario or 'WORLD_HUMAN_GUARD_STAND', 0, true)
-                        end
-
-                        if pedData.skin then
-                            Skin(pedData.ped, pedData.skin)
-                        end
-
-                        pedData.Loaded = true
-
-                        table.insert(ModrollPeds, {
-                            ped = pedData.ped,
-                            Loaded = pedData.Loaded
-                        })
-                    end
-                else
-                    if pedData.ped then
-                        if DoesEntityExist(pedData.ped) then
-                            DeleteEntity(pedData.ped)
-                            pedData.ped = nil
-                            pedData.Loaded = false
-                        end
-                    end
-                end
-            end
-
-            Wait(sleep)
-        end
-    end);
-end
 
 local function updatePedText(peds)
     CreateThread(function()
@@ -6954,41 +6859,7 @@ local function updatePedText(peds)
     end);
 end
 
-local function updateMidrollText(peds)
-    CreateThread(function()
-        while true do
-            local sleep = 500
-            local playerCoords = GetEntityCoords(PlayerPedId())
 
-            for _, pedData in next, (peds) do
-                if pedData.position then
-                    local dist = #(playerCoords - vec3(pedData.position.x, pedData.position.y, pedData.position.z))
-
-                    if dist < 15 then
-                        sleep = 0
-                        Text(pedData.position.x, pedData.position.y, pedData.position.z + 1.2, pedData.name, 255, 255,
-                            255, 0.4)
-                        Text(pedData.position.x, pedData.position.y, pedData.position.z + 1.0,
-                            Config.Server.ScorePeds.Texts.midrolls:format(pedData.midrolls), 255, 255, 255, 0.3)
-                    end
-                end
-            end
-            Wait(sleep)
-        end
-    end);
-end
-
-RegisterNetEvent("updatePeds", function(peds, PlayerMidrolls)
-    repeat
-        Wait(100)
-    until ESX.IsPlayerLoaded()
-
-    spawnPeds(peds)
-    spawnMidrollPed(PlayerMidrolls)
-
-    updatePedText(peds)
-    updateMidrollText(PlayerMidrolls)
-end);
 
 -----------------------------------------------------------------------------
 -----------------------------------MATCH-------------------------------------
