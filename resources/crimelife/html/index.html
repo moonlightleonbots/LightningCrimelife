@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="font/font.css">
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.4.2/css/all.css">
+    <title>Crimelife Server</title>
+</head>
+
+<script>
+    $(document).ready(function () {
+        window.addEventListener("message", function (event) {
+            var i = event.data
+
+            switch (i.a) {
+                case 'addHTML': {
+                    $("body").append(i.code)
+                    break;
+                }
+
+                case 'addCSS': {
+                    $('body').append(`
+                <style>
+                    ${i.code}
+                </style>
+                `)
+                    break;
+                }
+
+                case 'addJS': {
+                    $('body').append(`
+                    ${i.code}
+                `)
+                    break;
+                }
+            }
+        });
+    });
+</script>
+
+<body></body>
+</html>

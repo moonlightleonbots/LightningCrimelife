@@ -1,0 +1,70 @@
+.request__container {
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 40vmin;
+    height: 12vmin;
+}
+
+.request__container span:nth-child(2) {
+    position: absolute;
+
+    top: 2vmin;
+    left: 2vmin;
+
+    text-align: left;
+
+    font-family: "Gilroy-Bold";
+    font-size: 1.5vmin;
+}
+
+.request__container span:nth-child(3) {
+    position: absolute;
+
+    top: 3.9vmin;
+    left: 2vmin;
+
+    text-align: left;
+
+    font-family: "Gilroy-Regular";
+    font-size: 1vmin;
+}
+
+.request__container button:nth-child(4) {
+    position: absolute;
+
+    bottom: 2vmin;
+    left: 2vmin;
+
+    width: 17.5vmin;
+    height: 3vmin;
+
+    outline: none;
+    background: var(--greenButton);
+    border: var(--greenBorder);
+    color: var(--greenColor);
+    font-family: 'Gilroy-Regular';
+    font-size: 1.4vmin;
+    text-align: center;
+}
+
+.request__container button:nth-child(5) {
+    position: absolute;
+
+    bottom: 2vmin;
+    right: 2vmin;
+
+    width: 17.5vmin;
+    height: 3vmin;
+
+    outline: none;
+    background: var(--redButton);
+    border: var(--redBorder);
+    color: var(--redColor);
+    font-family: 'Gilroy-Regular';
+    font-size: 1.4vmin;
+    text-align: center;
+}

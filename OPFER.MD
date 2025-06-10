@@ -1,0 +1,1 @@
+Jason Schaarschmidt [aka Jay] hat zwar die Base verkauft, aber bevor die geizigen Reichen noch reicher werden, gönnt man sie doch lieber den Armen. [Von den 400€ sollte man schon Anteile abdrücken würde ich mal sagen :D]

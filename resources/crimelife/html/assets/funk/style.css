@@ -1,0 +1,308 @@
+.funk {
+    position: absolute;
+
+    bottom: 1vmin;
+    left: 1vmin;
+
+    width: 25vmin;
+    height: 48vmin;
+
+    border-radius: 0.5vmin;
+    filter: drop-shadow(0ch 0.3vh 0.6770833333333334vw rgb(0, 0, 0));
+}
+
+.funk img {
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+}
+
+.funk span:nth-child(2) {
+    position: absolute;
+
+    top: 6vmin;
+    left: 2vmin;
+
+    font-family: "Gilroy-Bold";
+    font-size: 1.4vmin;
+}
+
+.funk .funk-status.active {
+    color: #35FF6E;
+}
+
+.funk .funk-status.active::before {
+    content: "AKTIV";
+}
+
+.funk .funk-status.deactive {
+    color: #ff3535;
+}
+
+.funk .funk-status.deactive::before {
+    content: "AUS";
+}
+
+.funk .funk-status {
+    position: absolute;
+
+    top: 6vmin;
+    left: 11vmin;
+
+    font-family: "Gilroy-Bold";
+    font-size: 1.4vmin;
+}
+
+.funk .funk-shadow {
+    position: absolute;
+
+    top: 8.5vmin;
+    left: 2vmin;
+
+    width: 21vmin;
+    height: 0.2vmin;
+
+    border-radius: 0.4vmin;
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+.funk .funk-join-header {
+    position: absolute;
+
+    top: 10vmin;
+    left: 2vmin;
+
+    width: 21vmin;
+    height: 8vmin;
+
+    border-radius: 0.4vmin;
+    border-bottom: solid 0.2vmin rgba(255, 255, 255, 0.05);
+}
+
+.funk .funk-join-header i {
+    position: absolute;
+
+    width: 3vmin;
+    height: 3vmin;
+
+    border-radius: 50%;
+    background-color: rgb(37, 0, 0);
+
+    border: var(--border);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 1.1vmin;
+
+    color: var(--color);
+}
+
+.funk .funk-join-header span:nth-child(2) {
+    position: absolute;
+
+    top: 0.1vmin;
+    left: 4vmin;
+
+    font-family: "Gilroy-Medium";
+    font-size: 1vmin;
+
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.funk .funk-join-header span:nth-child(3) {
+    position: absolute;
+
+    top: 1.4vmin;
+    left: 4vmin;
+
+    font-family: "Gilroy-Medium";
+    font-size: 1.4vmin;
+
+    width: 6vmin;
+
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.funk .funk-join-header button.isin {
+    background: radial-gradient(86.36% 653.13% at 50% 50%, rgba(255, 53, 53, 0.15) 0%, rgba(255, 53, 53, 0) 100%);
+    border: 0.0926vmin solid rgba(255, 53, 53, 0.1);
+
+    font-family: 'Gilroy-Regular';
+    font-size: 1vmin;
+    text-align: center;
+
+    color: #ff3535;
+}
+
+.funk .funk-join-header button.isin::before {
+    content: "TRENNEN";
+}
+
+.funk .funk-join-header button {
+    position: absolute;
+
+    top: 0.1vmin;
+    right: 0;
+
+    width: 7vmin;
+    height: 2vmin;
+
+    background: radial-gradient(86.36% 653.13% at 50% 50%, rgba(53, 255, 110, 0.15) 0%, rgba(53, 255, 110, 0) 100%);
+    border: 0.0926vmin solid rgba(53, 255, 110, 0.1);
+
+    font-family: 'Gilroy-Regular';
+    font-size: 1vmin;
+    text-align: center;
+
+    color: #35FF6E;
+}
+
+.funk .funk-join-header button::before {
+    content: "VERBINDEN";
+}
+
+.funk .funk-join-header input {
+    position: absolute;
+
+    top: 5vmin;
+    left: 0vmin;
+
+    width: 20vmin;
+    height: 2.5vmin;
+
+    outline: none;
+    border: none;
+    border-radius: 0.3vmin;
+    background: rgba(255, 255, 255, 0.09);
+
+    font-family: 'Gilroy-Regular';
+    font-size: 1vmin;
+    text-align: left;
+
+    text-indent: 1vmin;
+
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.funk .funk-settings {
+    position: absolute;
+
+    top: 20vmin;
+    left: 2vmin;
+
+    width: 21vmin;
+    height: 7vmin;
+
+    border-radius: 0.4vmin;
+    border-bottom: solid 0.2vmin rgba(255, 255, 255, 0.05);
+}
+
+.funk .funk-settings .funk-settings-header {
+    position: absolute;
+
+    top: -1vmin;
+    left: 0vmin;
+
+    font-family: "Gilroy-Regular";
+    font-size: 1.4vmin;
+
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.funk-settings-item {
+    margin-top: 1vmin;
+    position: relative;
+
+    top: 1.6vmin;
+
+    width: 100%;
+    height: 3vmin;
+
+    border-radius: 0.3vmin;
+    background: rgba(255, 255, 255, 0.04);
+
+    display: flex;
+    align-items: center;
+
+    font-family: "Gilroy-Regular";
+    font-size: 1.3vmin;
+
+    color: rgba(255, 255, 255, 0.6);
+
+    text-indent: 1vmin;
+}
+
+.funk .funk-settings-item label.checkbox:hover {
+    cursor: pointer;
+}
+
+.funk .funk-settings-item label.checkbox .input {
+    position: absolute;
+
+    top: 50%;
+    transform: translateY(-50%);
+    right: 1vmin;
+
+    width: 3.7037vmin;
+    height: 1.5vmin;
+
+    background: rgba(255, 255, 255, 0.15);
+    transition: 0.3s background-color cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+    display: flex;
+    align-items: center;
+}
+
+.funk .funk-settings-item label.checkbox .input::before {
+    content: '';
+    position: absolute;
+    transition: 0.3s transform cubic-bezier(0.39, 0.575, 0.565, 1);
+
+    width: 1.2963vmin;
+    height: 1.5vmin;
+
+    background: #FF3030;
+}
+
+.funk .funk-settings-item label.checkbox input[type='checkbox'] {
+    opacity: 0;
+    width: 0;
+    height: 0;
+    position: absolute;
+}
+
+.funk .funk-settings-item label.checkbox input:checked+.input::before {
+    transform: translateX(2.35vmin) !important;
+
+    background: #09DD7A;
+}
+
+.funk .funk-animations {
+    position: absolute;
+
+    top: 29vmin;
+    left: 2vmin;
+
+    width: 21vmin;
+    height: 15vmin;
+
+    border-radius: 0.4vmin;
+    border-bottom: solid 0.2vmin rgba(255, 255, 255, 0.05);
+}
+
+.funk .funk-animations .funk-animations-header {
+    position: absolute;
+
+    top: -1vmin;
+    left: 0vmin;
+
+    font-family: "Gilroy-Regular";
+    font-size: 1.4vmin;
+
+    color: rgba(255, 255, 255, 0.6);
+}

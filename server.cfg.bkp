@@ -1,0 +1,116 @@
+# <3 MADE BY Ali and Jayy <3
+#ensure WaveShield #Backup AC - BETA 4.4 [4.4-beta]
+ensure crimelife_ac #FiveGuard
+exec perms.cfg
+ensure cs
+
+
+
+########### WaveGay ##############
+# PL
+add_ace group.pl "WaveShield.Bypass" allow
+add_ace group.pl "WaveShield.Commands" allow
+
+# Manager
+add_ace group.manager "WaveShield.Bypass" allow
+add_ace group.manager "WaveShield.Commands" allow
+
+# Teamleitung
+add_ace group.teamleitung "WaveShield.Bypass" allow
+add_ace group.teamleitung "WaveShield.Commands" allow
+
+# SuperAdmin
+add_ace group.sadmin "WaveShield.Bypass" allow
+
+# Admin
+add_ace group.admin "WaveShield.Bypass" allow
+
+# Mod
+add_ace group.mod "WaveShield.Bypass" allow
+
+# Support
+add_ace group.support "WaveShield.Bypass" allow
+
+
+
+########### FiveGay ##############
+## PL
+add_ace group.pl AdminMenu allow
+add_ace group.pl Client allow
+add_ace group.pl Weapon allow
+add_ace group.pl Vehicle allow
+add_ace group.pl Blacklist allow
+add_ace group.pl Misc allow
+
+## Manager
+add_ace group.manager BypassSpectate allow
+add_ace group.manager BypassGodMode allow
+add_ace group.manager BypassNoclip allow
+add_ace group.manager BypassFreecam allow
+add_ace group.manager BypassTeleport allow
+# AdminMenu
+add_ace group.manager AdminMenuAccess allow
+add_ace group.manager MiscAccess allow
+add_ace group.manager LogsAccess allow
+add_ace group.manager BanListAndUnbanAccess allow
+add_ace group.manager BanAndKickAccess allow
+add_ace group.manager ClearEntitiesAccess allow
+add_ace group.manager FGCommands allow
+
+## Teamleitung
+add_ace group.teamleitung BypassSpectate allow
+add_ace group.teamleitung BypassGodMode allow
+add_ace group.teamleitung BypassNoclip allow
+add_ace group.teamleitung BypassFreecam allow
+add_ace group.teamleitung BypassTeleport allow
+# AdminMenu
+add_ace group.teamleitung AdminMenuAccess allow
+add_ace group.teamleitung MiscAccess allow
+add_ace group.teamleitung LogsAccess allow
+add_ace group.teamleitung BanListAndUnbanAccess allow
+add_ace group.teamleitung BanAndKickAccess allow
+add_ace group.teamleitung ClearEntitiesAccess allow
+add_ace group.teamleitung FGCommands allow
+
+## SuperAdmin
+add_ace group.sadmin BypassSpectate allow
+add_ace group.sadmin BypassGodMode allow
+add_ace group.sadmin BypassNoclip allow
+add_ace group.sadmin BypassFreecam allow
+add_ace group.sadmin BypassTeleport allow
+# AdminMenu
+add_ace group.sadmin AdminMenuAccess allow
+add_ace group.sadmin MiscAccess allow
+add_ace group.sadmin LogsAccess allow
+add_ace group.sadmin BanListAndUnbanAccess allow
+
+## Admin
+add_ace group.admin BypassSpectate allow
+add_ace group.admin BypassGodMode allow
+add_ace group.admin BypassNoclip allow
+add_ace group.admin BypassFreecam allow
+add_ace group.admin BypassTeleport allow
+# AdminMenu
+add_ace group.admin AdminMenuAccess allow
+add_ace group.admin MiscAccess allow
+add_ace group.admin LogsAccess allow
+
+## Mod
+add_ace group.mod BypassSpectate allow
+add_ace group.mod BypassGodMode allow
+add_ace group.mod BypassNoclip allow
+add_ace group.mod BypassFreecam allow
+add_ace group.mod BypassTeleport allow
+# AdminMenu
+add_ace group.mod AdminMenuAccess allow
+add_ace group.mod MiscAccess allow
+
+## Support
+add_ace group.support BypassSpectate allow
+add_ace group.support BypassGodMode allow
+add_ace group.support BypassNoclip allow
+add_ace group.support BypassFreecam allow
+add_ace group.support BypassTeleport allow
+# AdminMenu
+add_ace group.support AdminMenuAccess allow
+add_ace group.support MiscAccess allow

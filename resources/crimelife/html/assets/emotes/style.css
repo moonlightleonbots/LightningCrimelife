@@ -1,0 +1,42 @@
+.emoterad {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 33.3333vh;
+    height: 33.3333vh;
+    font-size: 1.8519vh;
+    display: grid;
+    place-items: center;
+}
+
+.rad {
+    position: absolute;
+    width: 8vh;
+    height: 8vh;
+    background: #00000060;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: 0.1s ease-in-out;
+}
+
+.rad img {
+    width: 4vh;
+    height: 4vh;
+}
+
+.rad:hover {
+    background: #00000080;
+}
+
+.rad1 { transform: rotate(0deg) translate(13vh) rotate(0deg); }
+.rad2 { transform: rotate(45deg) translate(13vh) rotate(-45deg); }
+.rad3 { transform: rotate(90deg) translate(13vh) rotate(-90deg); }
+.rad4 { transform: rotate(135deg) translate(13vh) rotate(-135deg); }
+.rad5 { transform: rotate(180deg) translate(13vh) rotate(-180deg); }
+.rad6 { transform: rotate(225deg) translate(13vh) rotate(-225deg); }
+.rad7 { transform: rotate(270deg) translate(13vh) rotate(-270deg); }
+.rad8 { transform: rotate(315deg) translate(13vh) rotate(-315deg); }

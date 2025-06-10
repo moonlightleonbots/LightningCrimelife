@@ -1,0 +1,89 @@
+.invite {
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 55vmin;
+    height: 25vmin;
+
+    border-radius: 0.8vmin;
+    background: var(--ordnerBg);
+    filter: drop-shadow(0ch 0.3vh 0.6770833333333334vw rgb(0, 0, 0));
+
+    display: flex;
+    justify-content: center;
+}
+
+.invite .invite-faction {
+    position: absolute;
+
+    top: 10vmin;
+
+    color: rgba(255, 255, 255, 0.8);
+    font-family: "Gilroy-Bold";
+    font-size: 2vmin;
+
+    text-transform: uppercase;
+}
+
+.invite .invite-name {
+    position: absolute;
+
+    top: 12.5vmin;
+
+    color: rgba(255, 255, 255, 0.8);
+    font-family: "Gilroy-Medium";
+    font-size: 2vmin;
+
+    text-transform: uppercase;
+}
+
+.invite .inv-accept {
+    position: absolute;
+
+    bottom: 2vmin;
+    left: 11vmin;
+
+    width: 15vmin;
+    height: 3vmin;
+
+    outline: none;
+    border: none;
+    background: #1eff29;
+    box-shadow: 0vw 0.46875vw 2.1875vw 0vw #1eff2980;
+    border-radius: 0.2vmin;
+    color: #060303;
+
+    font-family: 'Gilroy-Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.6vmin;
+
+    cursor: pointer;
+}
+
+.invite .inv-deny {
+    position: absolute;
+
+    bottom: 2vmin;
+    right: 11vmin;
+
+    width: 15vmin;
+    height: 3vmin;
+
+    outline: none;
+    border: none;
+    background: var(--color);
+    box-shadow: 0vw 0.46875vw 2.1875vw 0vw var(--shadow);
+    border-radius: 0.2vmin;
+    color: #060303;
+
+    font-family: 'Gilroy-Regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.6vmin;
+
+    cursor: pointer;
+}

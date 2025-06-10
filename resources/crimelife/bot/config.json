@@ -1,0 +1,111 @@
+{
+  "BOT_TOKEN": "MTMxMjI5MTA5NjkwNjMwMTUxMg.G4y-yD.OE0fNQ7Z_QN9Vx4WflQLU9JnZinEIM_X2vs0Cc",
+  "FIVEGUARD_RESOURCE_NAME": "crimelife_ac",
+  "SERVER_STATUS": {
+    "ON": false,
+    "MESSAGE": "Playing with <count> players."
+  },
+  "AIMBOT_BANS": {
+    "ENABLED": true,
+    "AIMBOT_LOGS_CHANNEL": "1315000463711670322"
+  },
+  "PERMISSIONS": {
+    "BAN": ["1302106879454875688"],
+    "BANINFO": ["1311012126781079724", "1302106879454875688", "1302111424256016424"],
+    "KICK": ["1302106879454875688"],
+    "RECORDSCREEN": ["1311012126781079724", "1302106879454875688", "1302111424256016424"],
+    "SCREENSHOT": ["1311012126781079724", "1302106879454875688", "1302111424256016424"],
+    "UNBAN": ["1311012126781079724", "1302106879454875688"],
+    "BANLIST": ["1311012126781079724", "1302106879454875688"]
+  },
+  "LANGUAGE": {
+    "NO_PERMISSION_INFO": "Du kannst diesen Command nicht nutzen, bitte wende dich an einen Teamler mit der Rolle: **» AntiCheat Perms**.",
+    "INVALID_ID_INFO": "Falsche BanID",
+    "BAN": {
+      "SUCCESS_MESSAGE": "Spieler wurde gebannt.",
+      "DESCRIPTION": "Einen Spieler halt Bannen yk.",
+      "OPTIONS": {
+        "ID": {
+          "DESCRIPTION": "Ingame ID von einem Spieler."
+        },
+        "REASON": {
+          "DESCRIPTION": "Bangrund?"
+        },
+        "LOG": {
+          "DESCRIPTION": "Auf YES machen."
+        }
+      }
+    },
+    "BANINFO": {
+      "DESCRIPTION": "FiveGuard BanID."
+    },
+    "KICK": {
+      "DESCRIPTION": "Kicke einen Spieler",
+      "OPTIONS": {
+        "ID": {
+          "DESCRIPTION": "Ingame ID vom Spieler"
+        },
+        "REASON": {
+          "DESCRIPTION": "Kick grund"
+        }
+      }
+    },
+    "RECORDSCREEN": {
+      "DESCRIPTION": "Spieler Screen aufnehmen (MAXIMAL 60 SEKUNDEN)",
+      "SUCCESS_MESSAGE": "Screen wird aufgenommen.",
+      "OPTIONS": {
+        "ID": {
+          "DESCRIPTION": "Ingame Spieler ID"
+        },
+        "TIME": {
+          "DESCRIPTION": "Zeit in Sekunden. (MAXIMAL 60 Sekunden)"
+        }
+      }
+    },
+    "SCREENSHOT": {
+      "DESCRIPTION": "Screenshot von einem Spieler",
+      "SUCCESS_MESSAGE": "Versuche Screenshot auf zu nehmen.",
+      "OPTIONS": {
+        "ID": {
+          "DESCRIPTION": "Ingame Spieler ID"
+        }
+      }
+    },
+    "WSUNBAN": {
+      "DESCRIPTION": "Spieler WaveShield Unbannen",
+      "ERROR_MESSAGE": "**WaveShield BanID nicht gefunden.**",
+      "OPTIONS": {
+        "BANID": {
+          "DESCRIPTION": "WaveShield BanID",
+          "REASON": "Unban Grund"
+        }
+      }
+    },
+    "UNBAN": {
+      "DESCRIPTION": "Spieler FiveGuard Unbannen",
+      "ERROR_MESSAGE": "**FiveGuard BanID nicht gefunden.**",
+      "OPTIONS": {
+        "BANID": {
+          "DESCRIPTION": "FiveGuard BanID"
+        }
+      }
+    },
+    "BANLIST": {
+      "DESCRIPTION": "Zeige alle FiveGuard Bans"
+    }
+  },
+  "IN_GAME_PERMISSIONS": {
+    "ENABLED": false,
+    "SHOW_LOADED_INFO": false,
+    "FRAMEWORK": "ESX",
+    "GUILD_ID": "1111111111111111111",
+    "PERMISSIONS": {
+      "111111111111111111": [
+        "BypassParticle"
+      ],
+      "222222222222222222": [
+        "BypassStealOutfit"
+      ]
+    }
+  }
+}

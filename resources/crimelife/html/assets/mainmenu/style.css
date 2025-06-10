@@ -1,0 +1,2818 @@
+.main__container {
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 140vmin;
+    height: 80vmin;
+
+    border-radius: 5vmin;
+    background: #000000;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: 0.6s all;
+
+    overflow: hidden;
+}
+
+.main__container .main__bg {
+    position: absolute;
+    top: 0;
+}
+
+.main__container .main__bg2 {
+    position: absolute;
+    bottom: 0;
+    transform: rotate(180deg);
+}
+
+.main__container .wrapper {
+    position: absolute;
+
+    width: 132vmin;
+    height: 72vmin;
+
+    border-radius: 2vmin;
+    border: var(--border);
+}
+
+.main__container .wrapper .main__header {
+    position: absolute;
+
+    top: 2vmin;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 128vmin;
+    height: 8vmin;
+
+    border-radius: 1vmin;
+    border: var(--border);
+
+    display: flex;
+    align-items: center;
+}
+
+.main__container .wrapper .main__header .main__header_firstSpan {
+    margin-left: 2vmin;
+
+    font-family: "Akrobat";
+    font-size: 3vmin;
+    text-align: center;
+
+    filter: drop-shadow(0vmin 0vmin 1.8519vmin #FFFFFF);
+    background: linear-gradient(90deg, #FFFFFF -2.56%, rgba(255, 255, 255, 0) 95.19%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+}
+
+.main__container .wrapper .main__header span:nth-child(2) {
+    font-family: "Akrobat";
+    font-size: 3vmin;
+    text-align: center;
+
+    color: var(--color);
+    filter: drop-shadow(0vmin 0vmin 1.8519vmin rgba(252, 43, 43, 0.75));
+}
+
+.main__container .wrapper .main__header span:nth-child(3) {
+    width: 10vmin;
+    margin-left: 0.6vmin;
+
+    font-family: "Gilroy-Regular";
+    font-size: 1vmin;
+    text-align: left;
+
+    color: rgba(255, 255, 255, 0.45);
+}
+
+.main__container .wrapper .main__header .main__value {
+    position: absolute;
+
+    right: 8vmin;
+
+    display: flex;
+}
+
+.main__container .wrapper .main__header .main__valueItem {
+    margin-right: 1vmin;
+    position: relative;
+
+    width: 13vmin;
+    height: 3vmin;
+
+    background-color: rgba(255, 255, 255, 0.03);
+
+    display: flex;
+    align-items: center;
+}
+
+.main__valueItem i.coins {
+    color: gold;
+}
+
+.main__valueItem i {
+    margin-left: 0.5vmin;
+
+    font-size: 1.2vmin;
+
+    cursor: pointer;
+}
+
+.main__container .wrapper .main__header .main__valueItem span:nth-child(2) {
+    margin-left: 0.5vmin;
+
+    font-family: "Gilroy-Medium";
+    font-size: 1.1vmin;
+
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.main__container .wrapper .main__header .main__header__items {
+    width: 72vmin;
+    height: 4vmin;
+
+    display: flex;
+    align-items: center;
+
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.main__container .wrapper .main__header .main__header__items .main__header__item {
+    margin-left: 1vmin;
+    position: relative;
+
+    padding-left: 1.5vmin;
+    padding-right: 1.5vmin;
+
+    width: auto;
+    height: 3vmin;
+
+    border-radius: 0.5vmin;
+    color: rgba(255, 255, 255, 0.45);
+    background-color: rgba(255, 255, 255, 0.03);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 1.2vmin;
+    font-family: "Gilroy-Regular";
+
+    transition: 0.2s all;
+
+    cursor: pointer;
+}
+
+.main__container .wrapper .main__header .main__header__items .main__header__item:hover {
+    transform: scale(1.1);
+    font-family: "Gilroy-Bold";
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.main__container .wrapper .main__header .main__header__items .main__header__item.select {
+    transform: scale(1.1);
+    font-family: "Gilroy-Bold";
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.main__container .main__wrapper {
+    position: absolute;
+
+    top: 17vmin;
+
+    width: 128vmin;
+    height: 56vmin;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.main__container .main__wrapper .main-shop-container {
+    position: relative;
+
+    width: 40vmin;
+    height: 100%;
+}
+
+.main__container .main__wrapper .main-shop-container .shop-header {
+    position: absolute;
+
+    top: 1vmin;
+
+    font-family: "Gilroy-Regular";
+    font-size: 1.2vmin;
+    color: rgba(255, 255, 255, 0.45);
+}
+
+.main__container .main__wrapper .main-shop-container .shop-append {
+    position: relative;
+
+    top: 3.5vmin;
+
+    width: 100%;
+    height: 47vmin;
+
+    overflow: auto;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: space-between;
+}
+
+.main__container .main__wrapper .main-shop-container .shop-append .shop-item {
+    margin-top: 1vmin;
+    position: relative;
+
+    top: -0.5vmin;
+
+    width: 19vmin;
+    height: 21vmin;
+
+    border: var(--border);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main__container .main__wrapper .main-shop-container .shop-append .shop-item span:nth-child(1) {
+    position: absolute;
+
+    top: 1vmin;
+    left: 1vmin;
+
+    font-size: 1.4vmin;
+    font-family: "Gilroy-Bold";
+}
+
+.main__container .main__wrapper .main-shop-container .shop-append .shop-item span:nth-child(2) {
+    position: absolute;
+
+    top: 3vmin;
+    left: 1vmin;
+
+    font-size: 1.2vmin;
+    font-family: "Gilroy-Regular";
+
+    color: greenyellow;
+}
+
+.main__container .main__wrapper .main-shop-container .shop-append .shop-item img {
+    position: absolute;
+
+    width: 10vmin;
+    height: 10vmin;
+
+    object-fit: contain;
+}
+
+.main__container .main__wrapper .main-shop-container .shop-append .shop-item button.buy {
+    background: radial-gradient(86.36% 653.13% at 50% 50%, rgba(53, 255, 110, 0.15) 0%, rgba(53, 255, 110, 0) 100%);
+    border: 0.0926vmin solid rgba(53, 255, 110, 0.1);
+
+    font-family: 'Akrobat';
+    font-size: 1.3vmin;
+    text-align: center;
+
+    color: #35FF6E;
+}
+
+.main__container .main__wrapper .main-shop-container .shop-append .shop-item button.sell {
+    background: radial-gradient(86.36% 653.13% at 50% 50%, rgba(255, 53, 53, 0.15) 0%, rgba(255, 53, 53, 0) 100%);
+    border: 0.0926vmin solid rgba(255, 53, 53, 0.1);
+
+    font-family: 'Akrobat';
+    font-size: 1.3vmin;
+    text-align: center;
+
+    color: #ff3535;
+}
+
+.main__container .main__wrapper .main-shop-container .shop-append .shop-item button {
+    position: absolute;
+
+    bottom: 1vmin;
+
+    width: 15vmin;
+    height: 3vmin;
+
+    cursor: pointer;
+
+    transition: 0.2s all;
+
+    background: radial-gradient(86.36% 653.13% at 50% 50%, rgba(53, 255, 110, 0.15) 0%, rgba(53, 255, 110, 0) 100%);
+    border: 0.0926vmin solid rgba(53, 255, 110, 0.1);
+
+    font-family: 'Akrobat';
+    font-size: 1.3vmin;
+    text-align: center;
+
+    color: #35FF6E;
+}
+
+.main__container .main__wrapper .main-shop-container .shop-append .shop-item button:hover {
+    transform: scale(1.1);
+}
+
+.main__container .main__wrapper .main-shop-container .pvp-append {
+    position: relative;
+
+    top: 3.5vmin;
+
+    width: 100%;
+    height: 47vmin;
+
+    overflow: auto;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.main__container .main__wrapper .main-shop-container .pvp-append .pvp-item {
+    margin-top: 1vmin;
+    position: relative;
+
+    width: 99%;
+    max-height: 6vmin;
+    min-height: 6vmin;
+
+    border: var(--border);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    transition: 0.4s all;
+
+    overflow: hidden;
+}
+
+.main__container .main__wrapper .main-shop-container .pvp-append .pvp-item span:nth-child(1) {
+    margin-left: 1vmin;
+
+    font-size: 1.4vmin;
+    font-family: "Gilroy-Bold";
+}
+
+.main__container .main__wrapper .main-shop-container .pvp-append .pvp-item span:nth-child(2) {
+    margin-left: 1vmin;
+
+    font-size: 1.2vmin;
+    font-family: "Gilroy-Regular";
+
+    color: #35FF6E;
+}
+
+.main__container .main__wrapper .main-shop-container .pvp-append .pvp-item i {
+    position: absolute;
+
+    right: 1vmin;
+
+    width: 3.5vmin;
+    height: 3.5vmin;
+
+    border: var(--border);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 1.5vmin;
+
+    cursor: pointer;
+}
+
+.main__container .main__wrapper .main-shop-container .pvp-append .pvp-item input {
+    position: absolute;
+
+    right: 5.5vmin;
+
+    width: 15vmin;
+    height: 3vmin;
+
+    outline: none;
+    border: none;
+    border-radius: 0.2vmin;
+    background-color: rgba(255, 255, 255, 0.1);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 1.2vmin;
+
+    text-indent: 1vmin;
+
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.pvp-item input::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.main__container #main__pvp .pvp-create-ffa-lobby {
+    position: absolute;
+
+    right: 0vmin;
+
+    width: 10vmin;
+    height: 3vmin;
+
+    border-radius: 0.3vmin;
+    background-color: rgba(255, 255, 255, 0.1);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+
+    transition: 0.2s all;
+
+    font-family: "Gilroy-Regular";
+    font-size: 1.2vmin;
+}
+
+.main__container #main__pvp .pvp-create-ffa-lobby:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.main__container #main__pvp_create_lobby {
+    position: absolute;
+
+    width: 40vmin;
+    height: 40vmin;
+}
+
+.main__container #main__pvp_create_lobby .creatorLobbyHeader {
+    width: 100%;
+
+    position: absolute;
+
+    top: 2vmin;
+    left: 50%;
+    transform: translateX(-50%);
+
+    font-family: "Akrobat";
+    font-size: 3vmin;
+    text-align: center;
+}
+
+.main__container #main__pvp_create_lobby .ffa-create-wrapper {
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 40vmin;
+    height: 40vmin;
+
+    border-radius: 2vmin;
+    border: var(--border);
+
+    display: flex;
+    justify-content: center;
+}
+
+.main__container #main__pvp_create_lobby .ffa-create-wrapper .ffa-create-button {
+    position: absolute;
+
+    bottom: 1vmin;
+
+    width: 15vmin;
+    height: 3vmin;
+
+    background: radial-gradient(86.36% 653.13% at 50% 50%, rgba(53, 255, 110, 0.15) 0%, rgba(53, 255, 110, 0) 100%);
+    border: 0.0926vmin solid rgba(53, 255, 110, 0.1);
+
+    font-family: 'Akrobat';
+    font-size: 1.3vmin;
+    text-align: center;
+
+    color: #35FF6E;
+
+    transition: 0.2s all;
+
+    cursor: pointer;
+}
+
+.main__container #main__pvp_create_lobby .ffa-create-wrapper .ffa-create-deny-button {
+    position: absolute;
+
+    top: 6.5vmin;
+
+    width: 10vmin;
+    height: 3vmin;
+
+    background: radial-gradient(86.36% 653.13% at 50% 50%, rgba(255, 53, 53, 0.15) 0%, rgba(255, 53, 53, 0) 100%);
+    border: 0.0926vmin solid rgba(255, 53, 53, 0.1);
+
+    font-family: 'Akrobat';
+    font-size: 1.3vmin;
+    text-align: center;
+
+    color: #ff3535;
+
+    transition: 0.2s all;
+
+    cursor: pointer;
+}
+
+.main__container #main__pvp_create_lobby .ffa-create-wrapper .ffa-create-deny-button:hover,
+.main__container #main__pvp_create_lobby .ffa-create-wrapper .ffa-create-button:hover {
+    transform: scale(1.05);
+}
+
+.ffa-create-item-container {
+    position: absolute;
+
+    top: 11.5vmin;
+
+    width: 100%;
+    height: 10vmin;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main__container #main__pvp_create_lobby .ffa-create-wrapper .ffa-create-item {
+    margin-top: 1vmin;
+    position: relative;
+
+    width: 30vmin;
+    min-height: 6vmin;
+
+    outline: none;
+    border: none;
+    border-radius: 0.4vmin;
+    background-color: rgba(255, 255, 255, 0.05);
+
+    font-size: "Gilroy-Regular";
+    font-size: 1.2vmin;
+
+    transition: 0.2s all;
+}
+
+.main__container #main__pvp_create_lobby .ffa-create-wrapper .ffa-create-item i {
+    position: absolute;
+
+    top: 50%;
+    left: 1vmin;
+    transform: translateY(-50%);
+
+    width: 3vmin;
+    height: 3vmin;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border: var(--border);
+
+    color: #ffffff;
+    font-size: 1.3vmin;
+}
+
+.main__container #main__pvp_create_lobby .ffa-create-wrapper .ffa-create-item span:nth-child(2) {
+    position: absolute;
+
+    top: 1.5vmin;
+    left: 5vmin;
+
+    font-family: "Gilroy-Medium";
+    font-size: 1.2vmin;
+
+    color: rgba(255, 255, 255, 0.5);
+
+    text-transform: uppercase;
+}
+
+.main__container #main__pvp_create_lobby .ffa-create-wrapper .ffa-create-item .ffa-create-input {
+    position: absolute;
+
+    bottom: 1.5vmin;
+    left: 5vmin;
+
+    width: 70%;
+
+    font-family: "Gilroy-Medium";
+    font-size: 1.1vmin;
+
+    color: rgb(255, 255, 255);
+
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+
+.main__container #main__pvp_create_lobby .ffa-create-wrapper .ffa-create-item .ffa-create-input::placeholder {
+    color: rgb(255, 255, 255);
+}
+
+.main__container #main__pvp_create_lobby .ffa-create-wrapper .ffa-create-item .ffa-create-dropdown {
+    position: absolute;
+
+    bottom: 1.1vmin;
+    left: 5vmin;
+
+    width: 70%;
+    height: 2.5vmin;
+
+    font-family: "Gilroy-Medium";
+    font-size: 1.1vmin;
+
+    color: rgb(255, 255, 255);
+
+    border: none;
+    border-radius: 0.4vmin;
+    background-color: transparent;
+
+    outline: none;
+    cursor: pointer;
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+.main__container #main__pvp_create_lobby .ffa-create-wrapper .ffa-create-item .ffa-create-dropdown option {
+    background-color: #444;
+    color: #eee;
+}
+
+.ffa-create-item img {
+    position: absolute;
+
+    top: 50%;
+    right: 1vmin;
+    transform: translateY(-50%);
+
+    width: 6vmin;
+    height: 4vmin;
+
+    object-fit: cover;
+}
+
+.main__container .main__blur {
+    position: absolute;
+
+    bottom: -10vmin;
+    left: 50%;
+    transform: translateX(-50%);
+
+
+    width: 36.0185vmin;
+    height: 13.8889vmin;
+
+    background: rgba(255, 0, 0, 0.493);
+    filter: blur(23.1481vmin);
+    border-radius: 24.5833vmin;
+}
+
+.main__container .main__loading {
+    width: 12vmin;
+    height: 12vmin;
+
+    border-radius: 50%;
+    border-top: 0.9259vmin solid #ff2d2d;
+    animation: spinDynamic 2s cubic-bezier(0.42, 0, 0.58, 1) infinite;
+}
+
+@keyframes spinDynamic {
+    0% {
+        transform: rotate(0deg);
+        animation-timing-function: cubic-bezier(0.75, 0, 0.9, 0.25);
+    }
+
+    25% {
+        transform: rotate(180deg);
+        animation-timing-function: cubic-bezier(0.1, 0.9, 0.2, 1);
+    }
+
+    50% {
+        transform: rotate(360deg);
+        animation-timing-function: cubic-bezier(0.75, 0, 0.9, 0.25);
+    }
+
+    75% {
+        transform: rotate(540deg);
+        animation-timing-function: cubic-bezier(0.1, 0.9, 0.2, 1);
+    }
+
+    100% {
+        transform: rotate(720deg);
+        animation-timing-function: cubic-bezier(0.75, 0, 0.9, 0.25);
+    }
+}
+
+.main__container .main__wrapper .battlepass-free-container {
+    position: absolute;
+
+    width: 75vmin;
+    height: 26vmin;
+}
+
+.main__container .main__wrapper .battlepass-premium-container {
+    position: absolute;
+
+    bottom: 0vmin;
+
+    width: 75vmin;
+    height: 26vmin;
+}
+
+.main__container .main__wrapper .battlepass-premium-container .battlepass-premium-blur {
+    position: absolute;
+
+    bottom: 0vmin;
+
+    width: 75vmin;
+    height: 26vmin;
+
+    background: #000000;
+    filter: blur(1.4vmin);
+}
+
+.main__container .main__wrapper .battlepass-premium-container .battlepass-premium-blur-span {
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    font-family: "Gilroy-Bold";
+    font-size: 3vmin;
+
+    color: white;
+}
+
+.main__container .main__wrapper .battlepass-free-container .battlepass-title,
+.main__container .main__wrapper .battlepass-premium-container .battlepass-title {
+    position: absolute;
+
+    top: 0.2vmin;
+    left: 0vmin;
+
+    width: 4vmin;
+    height: 98%;
+
+    border-radius: 0.5vmin;
+    border: var(--border);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main__container .main__wrapper .battlepass-free-container .battlepass-title p {
+    transform: rotate(-90deg);
+    font-family: "Akrobat";
+    font-size: 1.5vmin;
+    font-weight: 800;
+    color: #fff;
+}
+
+.main__container .main__wrapper .battlepass-premium-container .battlepass-title p {
+    transform: rotate(-90deg);
+    font-family: "Akrobat";
+    font-size: 1.5vmin;
+    font-weight: 800;
+    color: gold;
+}
+
+.main__container .main__wrapper .battlepass-append {
+    position: absolute;
+
+    left: 5vmin;
+
+    width: 70vmin;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.battlepass-append .battlepass-item {
+    margin-left: 1vmin;
+    position: relative;
+
+    min-width: 18vmin;
+    height: 98%;
+}
+
+.battlepass-append .battlepass-item .battlepass-level {
+    position: absolute;
+
+    top: 0;
+
+    width: 100%;
+    height: 3vmin;
+
+    background: radial-gradient(72.4% 72.4% at 50% 50%, rgba(217, 217, 217, 0.1) 0%, rgba(217, 217, 217, 0) 100%);
+    border: 0.0926vmin solid rgba(255, 255, 255, 0.1);
+    border-radius: 0.463vmin;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: "Gilroy-Bold";
+    font-size: 1.2vmin;
+}
+
+.battlepass-append .battlepass-item .batlepass-item-container {
+    position: absolute;
+
+    top: 5vmin;
+
+    width: 100%;
+    height: 20.4vmin;
+
+    background: radial-gradient(72.4% 72.4% at 50% 50%, rgba(217, 217, 217, 0.1) 0%, rgba(217, 217, 217, 0) 100%);
+    border: 0.0926vmin solid rgba(255, 255, 255, 0.1);
+    border-radius: 0.463vmin;
+}
+
+.battlepass-append .battlepass-item .batlepass-item-container img {
+    position: absolute;
+
+    top: 3vmin;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 10vmin;
+    height: 10vmin;
+
+    object-fit: contain;
+}
+
+.battlepass-append .battlepass-item .batlepass-item-container p {
+    position: absolute;
+
+    bottom: 1vmin;
+    left: 50%;
+    transform: translateX(-50%);
+
+    font-family: "Gilroy-Bold";
+    font-size: 1.6vmin;
+
+    color: #ffffff;
+}
+
+.battlepass-premium-container .battlepass-append .battlepass-item-premium {
+    margin-left: 1vmin;
+    position: relative;
+
+    min-width: 18vmin;
+    height: 98%;
+}
+
+.battlepass-premium-container .battlepass-append .battlepass-item-premium .battlepass-level-premium {
+    position: absolute;
+
+    top: 0;
+
+    width: 100%;
+    height: 3vmin;
+
+    background: radial-gradient(72.4% 72.4% at 50% 50%, rgba(244, 207, 74, 0.15) 0%, rgba(244, 207, 74, 0) 100%);
+    border: 0.0926vmin solid rgba(244, 207, 74, 0.15);
+    border-radius: 0.463vmin;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: "Gilroy-Bold";
+    font-size: 1.2vmin;
+
+    color: #F4CF4A;
+}
+
+.battlepass-premium-container .battlepass-append .battlepass-item-premium .batlepass-item-premium-container {
+    position: absolute;
+
+    top: 5vmin;
+
+    width: 100%;
+    height: 20.4vmin;
+
+    background: radial-gradient(72.4% 72.4% at 50% 50%, rgba(244, 207, 74, 0.15) 0%, rgba(244, 207, 74, 0) 100%);
+    border: 0.0926vmin solid rgba(244, 207, 74, 0.15);
+    border-radius: 0.463vmin;
+}
+
+.battlepass-premium-container .battlepass-append .battlepass-item-premium .batlepass-item-premium-container img {
+    position: absolute;
+
+    top: 3vmin;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 10vmin;
+    height: 10vmin;
+
+    object-fit: contain;
+}
+
+.battlepass-premium-container .battlepass-append .battlepass-item-premium .batlepass-item-premium-container p {
+    position: absolute;
+
+    bottom: 1vmin;
+    left: 50%;
+    transform: translateX(-50%);
+
+    font-family: "Gilroy-Bold";
+    font-size: 1.6vmin;
+
+    color: #F4CF4A;
+}
+
+.battlepass-premium-container .battlepass-append .battlepass-item-premium.claimed .batlepass-item-premium-container img,
+.battlepass-premium-container .battlepass-append .battlepass-item-premium.locked .batlepass-item-premium-container img,
+.battlepass-free-container .battlepass-append .battlepass-item.claimed .batlepass-item-container img,
+.battlepass-free-container .battlepass-append .battlepass-item.locked .batlepass-item-container img {
+    opacity: 0.2;
+}
+
+.battlepass-free-container .battlepass-append .battlepass-item.locked,
+.battlepass-premium-container .battlepass-append .battlepass-item-premium.locked {
+    opacity: 0.6;
+}
+
+.battlepass-free-container .battlepass-append .battlepass-item.claimed,
+.battlepass-premium-container .battlepass-append .battlepass-item-premium.claimed {
+    opacity: 0.6;
+}
+
+.battlepass-premium-container .battlepass-append .battlepass-item-premium.claimed::before,
+.battlepass-free-container .battlepass-append .battlepass-item.claimed::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: transparent;
+    border-radius: 0.26vw;
+    background: url('../../img/battlepass/success.svg') no-repeat center;
+    background-size: 3.45vw;
+}
+
+.main__container .main__wrapper .battlepass-quests-container {
+    position: absolute;
+
+    bottom: 0;
+    right: 0;
+
+    width: 50vmin;
+    height: 46vmin;
+}
+
+.quest__claimHeader {
+    width: 100%;
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    font-family: "Gilroy-Bold";
+    font-size: 1.7vmin;
+    color: white;
+
+    text-transform: uppercase;
+    text-align: center;
+
+    opacity: 1.0;
+
+    cursor: pointer;
+}
+
+.main__container .main__wrapper .battlepass-trade-container {
+    position: absolute;
+
+    top: 0;
+    right: 0;
+
+    width: 50vmin;
+    height: 6vmin;
+}
+
+.main__container .main__wrapper .battlepass-trade-container .battlepass-trade-item {
+    position: absolute;
+
+    bottom: 0;
+
+    width: 31vmin;
+    height: 3.5vmin;
+}
+
+.main__container .main__wrapper .battlepass-quests-container .battlepass-quests-append .quest-item.collected img {
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 5vmin;
+    height: 5vmin;
+
+    object-fit: contain;
+
+    display: block;
+}
+
+.main__container .main__wrapper .battlepass-quests-container .battlepass-quests-append .quest-item.collected span:nth-child(1),
+.main__container .main__wrapper .battlepass-quests-container .battlepass-quests-append .quest-item.collected span:nth-child(2),
+.main__container .main__wrapper .battlepass-quests-container .battlepass-quests-append .quest-item.collected span:nth-child(3) {
+    opacity: 0.04;
+}
+
+.main__container .main__wrapper .battlepass-quests-container .battlepass-quests-append .quest-item.collected .quests-bar {
+    opacity: 0.04;
+}
+
+.main__container .main__wrapper .battlepass-quests-container .battlepass-quests-append .quest-item.collected .quests-inner {
+    opacity: 0.04;
+}
+
+.main__container .main__wrapper .battlepass-quests-container .battlepass-quests-append .quest-item.claimed img {
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 5vmin;
+    height: 5vmin;
+
+    object-fit: contain;
+
+    display: block;
+}
+
+.main__container .main__wrapper .battlepass-quests-container .battlepass-quests-append .quest-item.claimed span:nth-child(1),
+.main__container .main__wrapper .battlepass-quests-container .battlepass-quests-append .quest-item.claimed span:nth-child(2),
+.main__container .main__wrapper .battlepass-quests-container .battlepass-quests-append .quest-item.claimed span:nth-child(3) {
+    opacity: 0.04;
+}
+
+.main__container .main__wrapper .battlepass-quests-container .battlepass-quests-append .quest-item.claimed .quests-bar {
+    opacity: 0.04;
+}
+
+.main__container .main__wrapper .battlepass-quests-container .battlepass-quests-append .quest-item.claimed .quests-inner {
+    opacity: 0.04;
+}
+
+.main__container .main__wrapper .battlepass-trade-container .battlepass-trade-item input {
+    position: absolute;
+
+    width: 20vmin;
+    height: 100%;
+
+    outline: none;
+    background: radial-gradient(72.4% 72.4% at 50% 50%, rgba(217, 217, 217, 0.1) 0%, rgba(217, 217, 217, 0) 100%);
+    border: 0.0926vmin solid rgba(255, 255, 255, 0.1);
+    border-radius: 0.463vmin;
+
+    font-size: 1.4vmin;
+    text-indent: 1vmin;
+    font-family: "Gilroy-Regular";
+
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.main__container .main__wrapper .battlepass-trade-container .battlepass-trade-item input::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.main__container .main__wrapper .battlepass-trade-container .battlepass-trade-item button {
+    position: absolute;
+
+    right: 0;
+
+    width: 10vmin;
+    height: 100%;
+
+    background: radial-gradient(86.36% 653.13% at 50% 50%, rgba(53, 255, 110, 0.15) 0%, rgba(53, 255, 110, 0) 100%);
+    border: 0.0926vmin solid rgba(53, 255, 110, 0.1);
+
+    font-family: 'Akrobat';
+    font-size: 1.3vmin;
+    text-align: center;
+
+    color: #35FF6E;
+
+    cursor: pointer;
+
+    transition: 0.2s all;
+}
+
+.main__container .main__wrapper .battlepass-trade-container .battlepass-trade-item button:hover {
+    transform: scale(1.05);
+}
+
+.main__container .main__wrapper .battlepass-trade-container .battlepass-header,
+.main__container .main__wrapper .battlepass-quests-container .battlepass-header {
+    position: absolute;
+
+    font-family: "Gilroy-Regular";
+    font-size: 1.2vmin;
+    color: rgba(255, 255, 255, 0.45);
+}
+
+.main__container .main__wrapper .battlepass-quests-container .battlepass-quests-append {
+    position: absolute;
+
+    top: 3vmin;
+
+    width: 100%;
+    height: 37vmin;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    overflow: auto;
+}
+
+.main__container .main__wrapper .battlepass-quests-container .battlepass-quests-append .quest-item {
+    margin-top: 1vmin;
+    position: relative;
+
+    width: 24vmin;
+    height: 10vmin;
+
+    background: radial-gradient(72.4% 72.4% at 50% 50%, rgba(217, 217, 217, 0.1) 0%, rgba(217, 217, 217, 0) 100%);
+    border: 0.0926vmin solid rgba(255, 255, 255, 0.1);
+    border-radius: 0.463vmin;
+}
+
+.main__container .main__wrapper .battlepass-quests-container .battlepass-quests-append .quest-item span:nth-child(1) {
+    position: absolute;
+
+    top: 1vmin;
+    left: 1vmin;
+
+    font-family: "Gilroy-Bold";
+    font-size: 1.2vmin;
+}
+
+.main__container .main__wrapper .battlepass-quests-container .battlepass-quests-append .quest-item span:nth-child(2) {
+    position: absolute;
+
+    top: 2.6vmin;
+    left: 1vmin;
+
+    font-family: "Gilroy-Regular";
+    font-size: 1.1vmin;
+}
+
+.main__container .main__wrapper .battlepass-quests-container .battlepass-quests-append .quest-item span:nth-child(3) {
+    position: absolute;
+
+    top: 6.6vmin;
+    left: 1vmin;
+
+    font-family: "Gilroy-Medium";
+    font-size: 1.1vmin;
+}
+
+.main__container .main__wrapper .battlepass-quests-container .battlepass-quests-append .quest-item .quests-bar {
+    position: absolute;
+
+    bottom: 1vmin;
+    left: 1vmin;
+
+    width: 20vmin;
+    height: 0.5vmin;
+
+    border-radius: 0.5vmin;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.main__container .main__wrapper .battlepass-quests-container .battlepass-quests-append .quest-item .quests-inner {
+    width: 34%;
+    height: 100%;
+
+    border-radius: 0.5vmin;
+    background-color: var(--color);
+}
+
+.main__container #main__scoreboard .scoreboard-header {
+    position: absolute;
+
+    width: 85vmin;
+    height: 56vmin;
+
+    border-radius: 0.5vmin;
+    border: var(--border);
+}
+
+.main__container #main__scoreboard .scoreboard-header .scoreboard-profile-image {
+    position: absolute;
+
+    top: 2vmin;
+    left: 2vmin;
+
+    width: 9vmin;
+    height: 9vmin;
+
+    border: 0.0463vh solid;
+    border-color: transparent;
+    border-image: radial-gradient(rgb(255, 255, 255), rgba(72.25, 167.33, 255, 0)) 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main__container #main__scoreboard .scoreboard-header .scoreboard-profile-image img {
+    width: 7vmin;
+    height: 7vmin;
+
+    border: var(--border);
+}
+
+.main__container #main__scoreboard .scoreboard-header .scoreboard-profile-name {
+    position: absolute;
+
+    top: 2.5vmin;
+    left: 13vmin;
+
+    font-family: "Gilroy-Regular";
+    font-size: 1.4vmin;
+}
+
+.main__container #main__scoreboard .scoreboard-header .scoreboard-profile-discord-name {
+    position: absolute;
+
+    top: 4vmin;
+    left: 13vmin;
+
+    font-family: "Gilroy-Bold";
+    font-size: 1.4vmin;
+
+    background: linear-gradient(180deg,
+            rgba(229, 69, 148, 1) 0%,
+            rgba(98, 28, 62, 1) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.main__container #main__scoreboard .scoreboard-header .scoreboard-battlepass-item {
+    position: absolute;
+
+    top: 6.5vmin;
+    left: 13vmin;
+
+    width: 25vmin;
+    height: 4.5vmin;
+}
+
+.main__container #main__scoreboard .scoreboard-header .scoreboard-battlepass-item .scoreboard-battlepass-score {
+    position: absolute;
+
+    font-family: "Gilroy-Medium";
+    font-size: 1.2vmin;
+
+    text-transform: uppercase;
+}
+
+.main__container #main__scoreboard .scoreboard-header .scoreboard-battlepass-bar-container {
+    position: absolute;
+
+    bottom: 0;
+
+    height: 0.5vmin;
+    width: 20vmin;
+
+    border-radius: 0.4vmin;
+    background-color: rgba(217, 217, 217, 0.1);
+}
+
+.main__container #main__scoreboard .scoreboard-header .scoreboard-battlepass-bar {
+    position: relative;
+
+    height: 100%;
+
+    border-radius: 0.4vmin;
+    background-color: var(--color);
+}
+
+.main__container #main__scoreboard .scoreboard-header .scoreboard-battlepass-exp {
+    position: absolute;
+
+    bottom: 0.8vmin;
+
+    font-family: "Gilroy-Regular";
+    font-size: 1.1vmin;
+}
+
+.main__container #main__scoreboard .scoreboard-header .scoreboard-liga-wrapper {
+    position: absolute;
+
+    top: 14vmin;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 95%;
+    height: 40vmin;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.main__container #main__scoreboard .scoreboard-header .scoreboard-liga-wrapper .liga-line {
+    position: relative;
+
+    width: 11.5vmin;
+    height: 100%;
+
+    border-left: solid 0.1vmin rgba(255, 255, 255, 0.2);
+    border-right: solid 0.1vmin rgba(255, 255, 255, 0.2);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.main__container #main__scoreboard .scoreboard-header .scoreboard-liga-wrapper .liga-line span:nth-child(1) {
+    position: absolute;
+
+    top: 1vmin;
+    left: 50%;
+    transform: translateX(-50%);
+
+    text-align: center;
+
+    font-family: "Gilroy-Bold";
+    font-size: 1.2vmin;
+}
+
+.main__container #main__scoreboard .scoreboard-header .scoreboard-liga-wrapper .liga-line .liga-line-item {
+    margin-top: 1vmin;
+    position: relative;
+
+    top: 3vmin;
+
+    width: 5vmin;
+    height: 5vmin;
+
+    border-radius: 50%;
+    background: radial-gradient(81.29% 88.65% at 50% 50.63%, rgba(255, 255, 255, 0.0675) 0%, rgba(255, 255, 255, 0.125) 100%);
+    border: 0.0926vmin solid rgba(255, 255, 255, 0.25);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main__container #main__scoreboard .scoreboard-header .scoreboard-liga-wrapper .liga-line .liga-line-item img {
+    width: 3.5vmin;
+    height: 3.5vmin;
+
+    object-fit: contain;
+}
+
+.main__container #main__scoreboard .scoreboard-all-container {
+    position: absolute;
+
+    right: 0;
+
+    width: 40vmin;
+    height: 56vmin;
+
+    border-radius: 0.5vmin;
+    border: var(--border);
+}
+
+.main__container #main__scoreboard .scoreboard-all-container h1 {
+    position: absolute;
+
+    top: 1vmin;
+    left: 50%;
+    transform: translateX(-50%);
+
+    font-family: "Gilroy-Bold";
+    font-size: 2vmin;
+}
+
+.main__container #main__scoreboard .scoreboard-all-header {
+    position: absolute;
+
+    top: 5vmin;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 33vmin;
+    height: 3vmin;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.main__container #main__scoreboard .scoreboard-all-container .scoreboard-all-header-item {
+    position: relative;
+
+    padding-left: 1.5vmin;
+    padding-right: 1.5vmin;
+
+    width: auto;
+    height: 3vmin;
+
+    background: radial-gradient(86.36% 653.13% at 50% 50%, rgba(255, 53, 53, 0.15) 0%, rgba(255, 53, 53, 0) 100%);
+    border: 0.0926vmin solid rgba(255, 53, 53, 0.1);
+
+    font-family: 'Akrobat';
+    font-size: 1.1vmin;
+    text-align: center;
+
+    color: #ff3535;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+    transition: 0.2s all;
+}
+
+.main__container #main__scoreboard .scoreboard-all-container .scoreboard-all-header-item:hover {
+    transform: scale(1.05);
+    background: radial-gradient(86.36% 653.13% at 50% 50%, rgba(255, 53, 53, 0.25) 0%, rgba(255, 53, 53, 0) 100%);
+}
+
+.main__container #main__scoreboard .scoreboard-all-container .scoreboard-all-header-item.select {
+    transform: scale(1.05);
+    background: radial-gradient(86.36% 653.13% at 50% 50%, rgba(255, 53, 53, 0.25) 0%, rgba(255, 53, 53, 0) 100%);
+}
+
+.main__container #main__scoreboard .scoreboard-all-container .scoreboard-all-second-container {
+    position: absolute;
+
+    top: 10vmin;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 33vmin;
+    height: 45vmin;
+
+    overflow: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.main__container #main__scoreboard .scoreboard-all-container .scoreboard-all-second-container .scoreboard-info-header {
+    position: absolute;
+
+    width: 100%;
+    height: 3vmin;
+
+    display: flex;
+    align-items: center;
+
+    text-transform: uppercase;
+}
+
+.main__container #main__scoreboard .scoreboard-all-container .scoreboard-all-second-container .scoreboard-info-header span:nth-child(1) {
+    margin-left: 1vmin;
+
+    width: 2.5vmin;
+    height: 2.5vmin;
+
+    font-family: "Gilroy-Bold";
+    font-size: 1.2vmin;
+    color: rgba(217, 217, 217, 0.5);
+
+    text-align: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main__container #main__scoreboard .scoreboard-all-container .scoreboard-all-second-container .scoreboard-info-header span:nth-child(2) {
+    margin-left: 1vmin;
+
+    width: 10vmin;
+    height: 2.5vmin;
+
+    font-family: "Gilroy-Bold";
+    font-size: 1.2vmin;
+    color: rgba(217, 217, 217, 0.5);
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.main__container #main__scoreboard .scoreboard-all-container .scoreboard-all-second-container .scoreboard-info-header span:nth-child(3) {
+    position: absolute;
+
+    right: 9vmin;
+
+    width: 7.5vmin;
+    height: 2.5vmin;
+
+    font-family: "Gilroy-Bold";
+    font-size: 1.2vmin;
+    color: rgba(217, 217, 217, 0.5);
+
+    text-align: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.main__container #main__scoreboard .scoreboard-all-container .scoreboard-all-second-container .scoreboard-info-header span:nth-child(4) {
+    position: absolute;
+
+    right: 2vmin;
+
+    width: 7vmin;
+    height: 2.5vmin;
+
+    font-family: "Gilroy-Bold";
+    font-size: 1.2vmin;
+    color: rgba(217, 217, 217, 0.5);
+
+    text-align: right;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.main__container #main__scoreboard .scoreboard-all-container .scoreboard-all-second-container .scoreboard-append-container {
+    position: absolute;
+
+    top: 4vmin;
+
+    width: 100%;
+    height: 39vmin;
+
+    overflow: auto;
+}
+
+.main__container #main__scoreboard .scoreboard-all-container .scoreboard-all-second-container .scoreboard-append-container .scoreboard-append-item {
+    margin-top: 1vmin;
+    position: relative;
+
+    top: -1vmin;
+
+    width: 99%;
+    min-height: 3vmin;
+
+    display: flex;
+    align-items: center;
+
+    text-transform: uppercase;
+
+    border-radius: 0.3vmin;
+    border: var(--border);
+}
+
+.main__container #main__scoreboard .scoreboard-all-container .scoreboard-all-second-container .scoreboard-append-container .scoreboard-append-item span:nth-child(1) {
+    margin-left: 1vmin;
+
+    width: 2.5vmin;
+    height: 2.5vmin;
+
+    font-family: "Gilroy-Medium";
+    font-size: 1vmin;
+
+    text-align: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main__container #main__scoreboard .scoreboard-all-container .scoreboard-all-second-container .scoreboard-append-container .scoreboard-append-item span:nth-child(2) {
+    margin-left: 1vmin;
+
+    width: 10vmin;
+    height: 2.5vmin;
+
+    font-family: "Gilroy-Medium";
+    font-size: 1vmin;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.main__container #main__scoreboard .scoreboard-all-container .scoreboard-all-second-container .scoreboard-append-container .scoreboard-append-item span:nth-child(3) {
+    position: absolute;
+
+    right: 8.8vmin;
+
+    width: 7.5vmin;
+    height: 2.5vmin;
+
+    font-family: "Gilroy-Medium";
+    font-size: 1vmin;
+
+    text-align: center;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main__container #main__scoreboard .scoreboard-all-container .scoreboard-all-second-container .scoreboard-append-container .scoreboard-append-item span:nth-child(4) {
+    position: absolute;
+
+    right: 1.7vmin;
+
+    width: 7vmin;
+    height: 2.5vmin;
+
+    font-family: "Gilroy-Medium";
+    font-size: 1vmin;
+
+    text-align: right;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.main__container .settings-toggles {
+    position: absolute;
+
+    left: 0vmin;
+
+    width: 128vmin;
+    height: 26vmin;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    align-items: flex-start;
+    justify-content: space-between;
+
+    overflow: auto;
+}
+
+.main__container .settings-toggles .settings-item {
+    margin-top: 1vmin;
+    position: relative;
+
+    min-width: 30vmin;
+    height: 11vmin;
+
+    border-radius: 0.5vmin;
+    border: var(--border);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main__container .settings-toggles .settings-item .settings-slider {
+    position: absolute;
+
+    bottom: 2vmin;
+    left: 9vmin;
+
+    width: 17vmin;
+    height: 0.2vmin;
+
+    outline: none;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.15);
+
+    -webkit-appearance: none;
+}
+
+.main__container .settings-toggles .settings-item .settings-slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    cursor: pointer;
+
+    width: 1.2963vmin;
+    height: 1.2963vmin;
+
+    border-radius: 50%;
+
+    background: #FF3030;
+    box-shadow: 0vmin 0.3704vmin 1.8148vmin #FF3030;
+}
+
+.main__container .settings-toggles .settings-item .settings-icon {
+    position: absolute;
+
+    top: 50%;
+    left: 1vmin;
+    transform: translateY(-50%);
+
+    width: 8vmin;
+    height: 8vmin;
+
+    background: radial-gradient(72.4% 72.4% at 50% 50%, rgba(217, 217, 217, 0.1) 0%, rgba(217, 217, 217, 0) 100%);
+    border: 0.0926vmin solid rgba(255, 255, 255, 0.1);
+    border-radius: 0.463vmin;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main__container .settings-toggles .settings-item i {
+    position: absolute;
+
+    width: 5vmin;
+    height: 5vmin;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 2vmin;
+
+    color: rgba(255, 255, 255, 0.5);
+
+    border: 0.0463vh solid;
+    border-color: transparent;
+    border-image: radial-gradient(rgb(255, 255, 255), rgba(72.25, 167.33, 255, 0)) 1;
+}
+
+.main__container .settings-toggles .settings-item .settings-icon span:nth-child(2) {
+    width: 20vmin;
+    position: absolute;
+
+    top: 0;
+    left: 9vmin;
+
+    font-family: "Gilroy-Bold";
+    font-size: 1.4vmin;
+}
+
+.main__container .settings-toggles .settings-item .settings-icon span:nth-child(3) {
+    position: absolute;
+
+    top: 1.8vmin;
+    left: 9vmin;
+
+    width: 18vmin;
+
+    font-family: "Gilroy-Regular";
+    font-size: 1vmin;
+
+    color: rgba(217, 217, 217, 0.6);
+}
+
+.main__container .settings-toggles .settings-item .settings-icon label.checkbox2:hover {
+    cursor: pointer;
+}
+
+.main__container .settings-toggles .settings-item .settings-icon label.checkbox2 .settingsChecker {
+    position: absolute;
+
+    bottom: 0;
+    left: 9vmin;
+
+    width: 3.7037vmin;
+    height: 2.2222vmin;
+
+    background: rgba(255, 255, 255, 0.15);
+    transition: 0.3s background-color cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+    display: flex;
+    align-items: center;
+}
+
+.main__container .settings-toggles .settings-item .settings-icon label.checkbox2 .settingsChecker::before {
+    content: '';
+    position: absolute;
+    left: 0.3704vmin;
+    transition: 0.3s transform cubic-bezier(0.39, 0.575, 0.565, 1);
+
+    width: 1.2963vmin;
+    height: 1.6667vmin;
+
+    background: #FF3030;
+    box-shadow: 0vmin 0.3704vmin 1.8148vmin #FF3030;
+}
+
+.main__container .settings-toggles .settings-item .settings-icon label.checkbox2 input[type='checkbox'] {
+    opacity: 0;
+    width: 0;
+    height: 0;
+    position: absolute;
+}
+
+.main__container .settings-toggles .settings-item .settings-icon label.checkbox2 input:checked+.settingsChecker::before {
+    transform: translateX(1.7593vmin) !important;
+
+    background: #09DD7A;
+    box-shadow: 0vmin 0.3704vmin 1.8148vmin #09DD7A;
+}
+
+.main__container #main__settings .settings-weather {
+    position: absolute;
+
+    bottom: 0;
+
+    width: 62vmin;
+    height: 28vmin;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.main__container #main__settings .settings-weather .settings-weather-item {
+    position: relative;
+
+    width: 20vmin;
+    height: 100%;
+
+    cursor: pointer;
+
+    transition: 0.2s all;
+
+    border-radius: 0.5vmin;
+    overflow: hidden;
+}
+
+.main__container #main__settings .settings-weather .settings-weather-item span:nth-child(1) {
+    position: absolute;
+
+    top: 2vmin;
+    left: 2vmin;
+
+    font-family: "Gilroy-Bold";
+    font-size: 2vmin;
+}
+
+.main__container #main__settings .settings-weather .settings-weather-item:hover img {
+    transform: scale(1.5);
+}
+
+.main__container #main__settings .settings-weather .settings-weather-item img {
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    opacity: 0.6;
+
+    border-radius: 0.5vmin;
+    transition: 0.2s all;
+}
+
+.settings-weather-icon {
+    position: absolute;
+
+    bottom: 2vmin;
+    left: 2vmin;
+
+    width: 3vmin;
+    height: 3vmin;
+
+    border-radius: 0.5vmin;
+    background-color: rgba(217, 217, 217, 0.5);
+}
+
+.settings-weather-icon.active {
+    background-color: var(--color);
+}
+
+.main__container #main__cases .cases__chose {
+    position: absolute;
+
+    right: 0;
+
+    width: 55vmin;
+    height: 100%;
+
+    border: var(--border);
+}
+
+.main__container #main__cases .cases__chose-header {
+    position: absolute;
+
+    top: 2vmin;
+    left: 3vmin;
+
+    font-family: "Gilroy-Medium";
+    font-size: 1.4vmin;
+}
+
+.main__container #main__cases .cases__chose-desc-header {
+    position: absolute;
+
+    top: 4vmin;
+    left: 3vmin;
+
+    font-family: "Gilroy-Regular";
+    font-size: 1vmin;
+
+    color: rgba(217, 217, 217, 0.5);
+}
+
+.main__container #main__cases .cases__chose .cases-append {
+    position: absolute;
+
+    top: 7vmin;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 90%;
+    height: auto;
+    max-height: 48vmin;
+
+    overflow: auto;
+
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: space-between;
+}
+
+.main__container #main__cases .cases__chose .cases-item {
+    margin-top: 1vmin;
+    position: relative;
+
+    width: 23.9vmin;
+    height: 20vmin;
+
+    border-radius: 0.5vmin;
+    background-color: rgba(217, 217, 217, 0.05);
+
+    display: flex;
+    justify-content: center;
+}
+
+.main__container #main__cases .cases__chose .cases-item img {
+    position: absolute;
+
+    top: 1vmin;
+
+    width: 100%;
+    height: 9vmin;
+
+    object-fit: contain;
+}
+
+.main__container #main__cases .cases__chose .cases-item span:nth-child(2) {
+    position: absolute;
+
+    bottom: 4.5vmin;
+    left: 1.9vmin;
+
+    font-family: "Gilroy-Regular";
+    font-size: 1.4vmin;
+
+    text-transform: uppercase;
+}
+
+.main__container #main__cases .cases__chose .cases-item span:nth-child(3) {
+    position: absolute;
+
+    bottom: 4.5vmin;
+    right: 1.9vmin;
+
+    font-family: "Gilroy-Regular";
+    font-size: 1.4vmin;
+}
+
+.main__container #main__cases .cases__chose .cases-item button {
+    position: absolute;
+
+    bottom: 1vmin;
+
+    width: 20vmin;
+    height: 3vmin;
+
+    cursor: pointer;
+    outline: none;
+    border: none;
+
+    font-family: 'Gilroy-Regular';
+    font-size: 1.2vmin;
+    text-align: center;
+
+    transition: 0.2s all;
+}
+
+.main__container #main__cases .cases__chose .cases-item button:hover {
+    transform: scale(1.05);
+}
+
+.main__container #main__cases .cases__chose .cases-item.bronze button {
+    background: radial-gradient(86.36% 653.13% at 50% 50%, rgba(255, 167, 53, 0.15) 0%, rgba(255, 167, 53, 0) 100%);
+    border: 0.0926vmin solid rgba(255, 167, 53, 0.1);
+
+    color: rgb(255, 167, 53);
+}
+
+.main__container #main__cases .cases__chose .cases-item.bronze span:nth-child(2) {
+    color: rgb(255, 167, 53);
+}
+
+.main__container #main__cases .cases__chose .cases-item.silber button {
+    background: radial-gradient(86.36% 653.13% at 50% 50%, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0) 100%);
+    border: 0.0926vmin solid rgba(255, 255, 255, 0.1);
+
+    color: rgb(255, 255, 255);
+}
+
+.main__container #main__cases .cases__chose .cases-item.silber span:nth-child(2) {
+    color: rgb(255, 255, 255);
+}
+
+.main__container #main__cases .cases__chose .cases-item.gold button {
+    background: radial-gradient(86.36% 653.13% at 50% 50%, rgba(255, 512, 0, 0.15) 0%, rgba(255, 512, 0, 0) 100%);
+    border: 0.0926vmin solid rgba(255, 512, 0, 0.1);
+
+    color: rgb(255, 512, 0);
+}
+
+.main__container #main__cases .cases__chose .cases-item.gold span:nth-child(2) {
+    color: rgb(255, 512, 0);
+}
+
+.main__container #main__cases .cases__chose .cases-item.platin button {
+    background: radial-gradient(86.36% 653.13% at 50% 50%, rgba(175, 230, 255, 0.15) 0%, rgba(175, 230, 255, 0) 100%);
+    border: 0.0926vmin solid rgba(175, 230, 255, 0.1);
+
+    color: rgb(112, 207, 252);
+}
+
+.main__container #main__cases .cases__chose .cases-item.platin span:nth-child(2) {
+    color: rgb(175, 230, 255);
+}
+
+.main__container #main__cases .cases__chose .cases-item.diamond button {
+    background: radial-gradient(86.36% 653.13% at 50% 50%, rgba(16, 183, 224, 0.15) 0%, rgba(16, 183, 224, 0) 100%);
+    border: 0.0926vmin solid rgba(16, 183, 224, 0.1);
+
+    color: rgb(16, 183, 224);
+}
+
+.main__container #main__cases .cases__chose .cases-item.diamond span:nth-child(2) {
+    color: rgb(16, 183, 224);
+}
+
+.main__container #main__cases .cases__chose .cases-item.elite button {
+    background: radial-gradient(86.36% 653.13% at 50% 50%, rgba(105, 0, 153, 0.15) 0%, rgba(105, 0, 153, 0) 100%);
+    border: 0.0926vmin solid rgba(105, 0, 153, 0.1);
+
+    color: rgb(105, 0, 153);
+}
+
+.main__container #main__cases .cases__chose .cases-item.elite span:nth-child(2) {
+    color: rgb(105, 0, 153);
+}
+
+.main__container #main__cases .case-preview {
+    position: absolute;
+
+    left: 0;
+
+    width: 68vmin;
+    height: 100%;
+
+    border: var(--border);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main__container #main__cases .case-preview .current-case {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+
+    top: 20vmin;
+    left: 50%;
+    transform: translateX(-50%);
+
+    font-size: 4.5vmin;
+    font-family: 'Reservation Wide';
+
+    text-transform: uppercase;
+}
+
+.main__container #main__cases .case-preview #current-case-img {
+    position: absolute;
+
+    top: 14.5vmin;
+
+    width: 30vmin;
+    height: 15vmin;
+
+    object-fit: contain;
+
+    opacity: 0.4;
+}
+
+.main__container #main__cases .case-preview .current-case.elite {
+    background: radial-gradient(65.42% 65.42% at 50% 50%, #690099 0%, #000000 100%);
+    text-transform: uppercase;
+    -webkit-text-stroke: 0.1vh #690099;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.main__container #main__cases .case-preview .current-case.diamond {
+    background: radial-gradient(65.42% 65.42% at 50% 50%, #10b7e0 0%, #000000 100%);
+    text-transform: uppercase;
+    -webkit-text-stroke: 0.1vh #10b7e0;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.main__container #main__cases .case-preview .current-case.platin {
+    background: radial-gradient(65.42% 65.42% at 50% 50%, #afe6ff 0%, #000000 100%);
+    text-transform: uppercase;
+    -webkit-text-stroke: 0.1vh #afe6ff;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.main__container #main__cases .case-preview .current-case.gold {
+    background: radial-gradient(65.42% 65.42% at 50% 50%, #ffcc00 0%, #000000 100%);
+    text-transform: uppercase;
+    -webkit-text-stroke: 0.1vh #ffcc00;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.main__container #main__cases .case-preview .current-case.silber {
+    background: radial-gradient(65.42% 65.42% at 50% 50%, #ffffff 0%, #000000 100%);
+    text-transform: uppercase;
+    -webkit-text-stroke: 0.1vh #ffffff;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.main__container #main__cases .case-preview .current-case.bronze {
+    background: radial-gradient(65.42% 65.42% at 50% 50%, #ffa733 0%, #000000 100%);
+    text-transform: uppercase;
+    -webkit-text-stroke: 0.1vh #ffa733;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.main__container #main__cases .case-preview .case-buy {
+    position: absolute;
+
+    bottom: 10vmin;
+
+    width: 20vmin;
+    height: 3vmin;
+
+    cursor: pointer;
+
+    transition: 0.2s all;
+}
+
+.main__container #main__cases .case-preview .case-price {
+    position: absolute;
+
+    bottom: 14vmin;
+    left: 50%;
+    transform: translateX(-50%);
+
+    cursor: pointer;
+
+    transition: 0.2s all;
+
+    font-family: 'Gilroy-Regular';
+    font-size: 1.2vmin;
+}
+
+.main__container #main__cases .case-preview .case-buy:hover {
+    transform: scale(1.05);
+}
+
+.main__container #main__cases .case-preview .case-buy.bronze {
+    background: radial-gradient(86.36% 653.13% at 50% 50%, rgba(255, 167, 53, 0.15) 0%, rgba(255, 167, 53, 0) 100%);
+    border: 0.0926vmin solid rgba(255, 167, 53, 0.1);
+
+    color: rgb(255, 167, 53);
+}
+
+.main__container #main__cases .case-preview .case-price.bronze {
+    color: rgb(255, 167, 53);
+}
+
+.main__container #main__cases .case-preview .case-buy.silber {
+    background: radial-gradient(86.36% 653.13% at 50% 50%, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0) 100%);
+    border: 0.0926vmin solid rgba(255, 255, 255, 0.1);
+
+    color: rgb(255, 255, 255);
+}
+
+.main__container #main__cases .case-preview .case-price.silber {
+    color: rgb(255, 255, 255);
+}
+
+.main__container #main__cases .case-preview .case-buy.gold {
+    background: radial-gradient(86.36% 653.13% at 50% 50%, rgba(255, 512, 0, 0.15) 0%, rgba(255, 512, 0, 0) 100%);
+    border: 0.0926vmin solid rgba(255, 512, 0, 0.1);
+
+    color: rgb(255, 512, 0);
+}
+
+.main__container #main__cases .case-preview .case-price.gold {
+    color: rgb(255, 512, 0);
+}
+
+.main__container #main__cases .case-preview .case-buy.platin {
+    background: radial-gradient(86.36% 653.13% at 50% 50%, rgba(175, 230, 255, 0.15) 0%, rgba(175, 230, 255, 0) 100%);
+    border: 0.0926vmin solid rgba(175, 230, 255, 0.1);
+
+    color: rgb(112, 207, 252);
+}
+
+.main__container #main__cases .case-preview .case-price.platin {
+    color: rgb(175, 230, 255);
+}
+
+.main__container #main__cases .case-preview .case-buy.diamond {
+    background: radial-gradient(86.36% 653.13% at 50% 50%, rgba(16, 183, 224, 0.15) 0%, rgba(16, 183, 224, 0) 100%);
+    border: 0.0926vmin solid rgba(16, 183, 224, 0.1);
+
+    color: rgb(16, 183, 224);
+}
+
+.main__container #main__cases .case-preview .case-price.diamond {
+    color: rgb(16, 183, 224);
+}
+
+.main__container #main__cases .case-preview .case-buy.elite {
+    background: radial-gradient(86.36% 653.13% at 50% 50%, rgba(105, 0, 153, 0.15) 0%, rgba(105, 0, 153, 0) 100%);
+    border: 0.0926vmin solid rgba(105, 0, 153, 0.1);
+
+    color: rgb(105, 0, 153);
+}
+
+.main__container #main__cases .case-preview .case-price.elite {
+    color: rgb(105, 0, 153);
+}
+
+.win-icon {
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 60vmin;
+    height: 60vmin;
+
+    display: none;
+}
+
+.win-reward {
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 13vmin;
+    height: 13vmin;
+
+    object-fit: contain;
+
+    display: none;
+}
+
+.main__container #main__cases .case-preview .case-claim {
+    position: absolute;
+
+    bottom: 10vmin;
+
+    width: 20vmin;
+    height: 3vmin;
+
+    cursor: pointer;
+
+    transition: 0.2s all;
+
+    background: radial-gradient(86.36% 653.13% at 50% 50%, rgba(224, 16, 16, 0.15) 0%, rgba(224, 16, 16, 0) 100%);
+    border: 0.0926vmin solid rgba(224, 16, 16, 0.1);
+
+    color: rgb(224, 16, 16);
+}
+
+.case-win-header {
+    position: absolute;
+
+    top: 2vmin;
+    left: 50%;
+    transform: translateX(-50%);    
+
+    font-family: "Gilroy-Bold";
+    font-size: 2vmin;
+}
+
+.case-win {
+    position: absolute;
+
+    top: 4.4vmin;
+    left: 50%;
+    transform: translateX(-50%);    
+
+    font-family: "Gilroy-Medium";
+    font-size: 1.4vmin;
+}
+
+@keyframes shake {
+    0% {
+        transform: translateX(0) rotate(0deg);
+    }
+
+    10% {
+        transform: translateX(-10px) rotate(-2deg);
+    }
+
+    20% {
+        transform: translateX(10px) rotate(2deg);
+    }
+
+    30% {
+        transform: translateX(-10px) rotate(-2deg);
+    }
+
+    40% {
+        transform: translateX(10px) rotate(2deg);
+    }
+
+    50% {
+        transform: translateX(0) rotate(0deg);
+    }
+
+    60% {
+        transform: translateX(-8px) rotate(-1.5deg);
+    }
+
+    70% {
+        transform: translateX(8px) rotate(1.5deg);
+    }
+
+    80% {
+        transform: translateX(-8px) rotate(-1.5deg);
+    }
+
+    90% {
+        transform: translateX(8px) rotate(1.5deg);
+    }
+
+    100% {
+        transform: translateX(0) rotate(0deg);
+    }
+}
+
+.nitro-animation {
+    animation: shake 1s infinite ease-in-out;
+}
+
+.main__container #main__inventory .inventory-weapons {
+    position: absolute;
+
+    width: 50vmin;
+    height: 56vmin;
+
+    border-radius: 0.5vmin;
+    border: var(--border);
+}
+
+.main__container #main__inventory .inventory-weapons .inventory-weapons-append {
+    position: absolute;
+
+    top: 4vmin;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 95%;
+    height: auto;
+    max-height: 50vmin;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    overflow: auto;
+}
+
+.main__container #main__inventory .inventory-weapons .inventory-weapons-append .inventory-weapons-item {
+    margin-top: 1vmin;
+    position: relative;
+
+    top: -0.7vmin;
+
+    width: 23.2vmin;
+    height: 7vmin;
+
+    border-radius: 0.5vmin;
+    background: radial-gradient(49.95% 18583.44% at 50.05% 50%, rgba(218, 218, 218, 0.06) 0%, rgba(218, 218, 218, 0) 100%);
+
+    display: flex;
+    justify-content: flex-start;
+}
+
+.main__container #main__inventory .inventory-weapons .inventory-weapons-append .inventory-weapons-item span {
+    position: absolute;
+
+    top: 1vmin;
+    left: 1vmin;
+
+    font-family: "Gilroy-Bold";
+    font-size: 1.3vmin;
+}
+
+.main__container #main__inventory .inventory-weapons .inventory-weapons-append .inventory-weapons-item button {
+    margin-left: 0.5vmin;
+    margin-right: 0.5vmin;
+
+    position: relative;
+
+    top: 3.7vmin;
+
+    width: auto;
+    height: 2.5vmin;
+
+    padding-left: 0.5vmin;
+    padding-right: 0.5vmin;
+
+    background: radial-gradient(86.36% 653.13% at 50% 50%, rgba(224, 16, 16, 0.15) 0%, rgba(224, 16, 16, 0) 100%);
+    border: 0.0926vmin solid rgba(224, 16, 16, 0.1);
+
+    color: rgb(224, 16, 16);
+
+    cursor: pointer;
+
+    font-family: 'Gilroy-Regular';
+    font-size: 1vmin;
+
+    transition: 0.2s all;
+}
+
+.main__container #main__inventory .inventory-items {
+    position: absolute;
+
+    left: 52vmin;
+
+    width: 44vmin;
+    height: 56vmin;
+
+    border-radius: 0.5vmin;
+    border: var(--border);
+}
+
+.main__container #main__inventory .inventory-items .inventory-items-append {
+    position: absolute;
+
+    top: 4vmin;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 95%;
+    height: auto;
+    max-height: 50vmin;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    overflow: auto;
+}
+
+.main__container #main__inventory .inventory-items .inventory-items-append .inventory-item {
+    margin-top: 1vmin;
+    position: relative;
+
+    top: -0.7vmin;
+
+    width: 20vmin;
+    height: 8vmin;
+
+    border-radius: 0.5vmin;
+    background: radial-gradient(49.95% 18583.44% at 50.05% 50%, rgba(218, 218, 218, 0.06) 0%, rgba(218, 218, 218, 0) 100%);
+
+    display: flex;
+    justify-content: center;
+}
+
+.main__container #main__inventory .inventory-items .inventory-items-append .inventory-item span {
+    position: absolute;
+
+    top: 1vmin;
+
+    font-family: "Gilroy-Bold";
+    font-size: 1.3vmin;
+}
+
+.main__container #main__inventory .inventory-items .inventory-items-append .inventory-item button {
+    margin-left: 0.5vmin;
+    margin-right: 0.5vmin;
+
+    position: relative;
+
+    top: 4.4vmin;
+
+    width: auto;
+    height: 2.5vmin;
+
+    padding-left: 0.5vmin;
+    padding-right: 0.5vmin;
+
+    background: radial-gradient(86.36% 653.13% at 50% 50%, rgba(224, 16, 16, 0.15) 0%, rgba(224, 16, 16, 0) 100%);
+    border: 0.0926vmin solid rgba(224, 16, 16, 0.1);
+
+    color: rgb(224, 16, 16);
+
+    cursor: pointer;
+
+    font-family: 'Gilroy-Regular';
+    font-size: 1vmin;
+
+    transition: 0.2s all;
+}
+
+.main__container #main__inventory .inventory-attachments {
+    position: absolute;
+
+    right: 0;
+
+    width: 30vmin;
+    height: 27vmin;
+
+    border-radius: 0.5vmin;
+    border: var(--border);
+}
+
+.main__container #main__inventory .inventory-attachments .inventory-attachments-append {
+    position: absolute;
+
+    top: 4vmin;
+
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 95%;
+    height: auto;
+    max-height: 21vmin;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    overflow: auto;
+}
+
+.main__container #main__inventory .inventory-attachments .inventory-attachments-append .inventory-attachments-item {
+    margin-top: 1vmin;
+    position: relative;
+
+    top: -0.7vmin;
+
+    width: 28vmin;
+    height: 4vmin;
+
+    border-radius: 0.5vmin;
+    background: radial-gradient(49.95% 18583.44% at 50.05% 50%, rgba(218, 218, 218, 0.06) 0%, rgba(218, 218, 218, 0) 100%);
+
+    display: flex;
+    align-items: center;
+}
+
+.main__container #main__inventory .inventory-attachments .inventory-attachments-append .inventory-attachments-item span {
+    position: absolute;
+
+    left: 1vmin;
+
+    font-family: "Gilroy-Bold";
+    font-size: 1.3vmin;
+}
+
+.main__container #main__inventory .inventory-attachments .inventory-attachments-append .inventory-attachments-item button {
+    margin-left: 0.5vmin;
+    margin-right: 0.5vmin;
+
+    position: absolute;
+
+    right: 1vmin;
+
+    width: auto;
+    height: 2.5vmin;
+
+    padding-left: 0.5vmin;
+    padding-right: 0.5vmin;
+
+    background: radial-gradient(86.36% 653.13% at 50% 50%, rgba(224, 16, 16, 0.15) 0%, rgba(224, 16, 16, 0) 100%);
+    border: 0.0926vmin solid rgba(224, 16, 16, 0.1);
+
+    color: rgb(224, 16, 16);
+
+    cursor: pointer;
+
+    font-family: 'Gilroy-Regular';
+    font-size: 1vmin;
+
+    transition: 0.2s all;
+}
+
+.main__container #main__inventory .inventory-skins {
+    position: absolute;
+
+    bottom: 0;
+    right: 0;
+
+    width: 30vmin;
+    height: 27vmin;
+
+    border-radius: 0.5vmin;
+    border: var(--border);
+}
+
+.main__container #main__inventory .inventory-skins .inventory-skins-append {
+    position: absolute;
+
+    top: 4vmin;
+
+    width: 100%;
+    height: 21vmin;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    overflow: auto;
+}
+
+.main__container #main__inventory .inventory-skins .inventory-skins-append .inventory-skins-item {
+    margin-top: 1vmin;
+    position: relative;
+
+    top: -0.7vmin;
+
+    width: 28vmin;
+    height: 4vmin;
+
+    border-radius: 0.5vmin;
+    background: radial-gradient(49.95% 18583.44% at 50.05% 50%, rgba(218, 218, 218, 0.06) 0%, rgba(218, 218, 218, 0) 100%);
+
+    display: flex;
+    align-items: center;
+}
+
+.main__container #main__inventory .inventory-skins .inventory-skins-append .inventory-skins-item span {
+    position: absolute;
+
+    left: 1vmin;
+
+    font-family: "Gilroy-Bold";
+    font-size: 1.3vmin;
+}
+
+.main__container #main__inventory .inventory-skins .inventory-skins-append .inventory-skins-item button {
+    margin-left: 0.5vmin;
+    margin-right: 0.5vmin;
+
+    position: absolute;
+
+    right: 1vmin;
+
+    width: auto;
+    height: 2.5vmin;
+
+    padding-left: 0.5vmin;
+    padding-right: 0.5vmin;
+
+    background: radial-gradient(86.36% 653.13% at 50% 50%, rgba(224, 16, 16, 0.15) 0%, rgba(224, 16, 16, 0) 100%);
+    border: 0.0926vmin solid rgba(224, 16, 16, 0.1);
+
+    color: rgb(224, 16, 16);
+
+    cursor: pointer;
+
+    font-family: 'Gilroy-Regular';
+    font-size: 1vmin;
+
+    transition: 0.2s all;
+}
+
+.inventory-header {
+    position: absolute;
+
+    top: 1vmin;
+    left: 1vmin;
+
+    font-family: "Gilroy-Medium";
+    font-size: 1.4vmin;
+
+    text-transform: uppercase;
+
+    color: rgba(217, 217, 217, 0.5);
+}
+
+@keyframes pvpBannerFade {
+    0% {
+        right: -40vmin;
+    }
+
+    100% {
+        right: 3vmin;
+    }
+}
+
+.pvpBanner {
+    position: absolute;
+
+    right: 3vmin;
+    bottom: 3vmin;
+
+    width: 40vmin;
+    height: 7.1vmin;
+
+    background-color: rgb(0, 0, 0);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    animation: pvpBannerFade 0.5s;
+}
+
+.pvpBanner span:nth-child(1) {
+    margin-left: 1vmin;
+
+    font-family: "Gilroy-Bold";
+    font-size: 3vmin;
+
+    color: var(--color);
+}
+
+.pvpBanner span:nth-child(2) {
+    width: 80%;
+    margin-left: 1vmin;
+
+    font-family: "Gilroy-Regular";
+    font-size: 1.2vmin;
+
+    color: rgba(255, 255, 255, 08);
+}
+
+.pvpBanner i {
+    position: absolute;
+
+    top: 50%;
+    right: 1vmin;
+    transform: translateY(-50%);
+
+    width: 4vmin;
+    height: 4vmin;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 1.6vmin;
+
+    color: rgba(255, 255, 255, 08);
+
+    border: 0.0463vh solid;
+    border-color: transparent;
+    border-image: radial-gradient(rgb(255, 255, 255), rgba(72.25, 167.33, 255, 0)) 1;
+}

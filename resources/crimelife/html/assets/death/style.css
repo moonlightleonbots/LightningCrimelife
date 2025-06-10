@@ -1,0 +1,149 @@
+.death {
+    position: absolute;
+
+    bottom: 1vmin;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 40vmin;
+    height: 14vmin;
+
+    border-radius: 0.5vmin;
+    background-color: rgb(0, 0, 0);
+    filter: drop-shadow(0ch 0.3vh 0.6770833333333334vw rgb(0, 0, 0));
+
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+}
+
+.death .main__bg {
+    position: absolute;
+    top: 0;
+
+    width: 100vmin;
+}
+
+.death .main__bg2 {
+    position: absolute;
+    bottom: 0;
+    transform: rotate(180deg);
+
+    width: 100vmin;
+}
+
+.death .death-header {
+    position: absolute;
+
+    top: 2.3vmin;
+    left: 7vmin;
+
+    font-family: "Press Start 2P", cursive;
+    font-size: 1.4vmin;
+
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.death .death-name {
+    position: absolute;
+
+    top: 4.3vmin;
+    left: 7vmin;
+
+    font-family: "Gilroy-Medium";
+    font-size: 1.4vmin;
+
+    width: 25vmin;
+
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.death .death-liga {
+    position: absolute;
+
+    top: 2vmin;
+    right: 2vmin;
+
+    width: 4vmin;
+    height: 4vmin;
+
+    object-fit: contain;
+}
+
+.death .death-avatar {
+    position: absolute;
+
+    top: 2vmin;
+    left: 1vmin;
+
+    width: 5vmin;
+    height: 5vmin;
+
+    border-radius: 50%;
+}
+
+.death .death-progress {
+    position: absolute;
+
+    bottom: 1.5vmin;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 36vmin;
+    height: 0.5vmin;
+
+    border-radius: 0.5vmin;
+    background-color: rgba(255, 255, 255, 0.09);
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.death .death-innerprogress {
+    position: absolute;
+
+    height: 0.15vmin;
+
+    border-radius: 0.5vmin;
+    background-color: var(--color);
+}
+
+.death .death-stats {
+    position: absolute;
+
+    top: 8vmin;
+
+    width: 37vmin;
+    height: 3vmin;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.death .death-stats .death-stats-item {
+    position: relative;
+
+    width: 11vmin;
+    height: 100%;
+
+    background: radial-gradient(49.95% 18583.44% at 50.05% 50%, rgba(218, 218, 218, 0.06) 0%, rgba(218, 218, 218, 0) 100%);
+
+    display: flex;
+    align-items: center;
+}
+
+.death .death-stats .death-stats-item i {
+    padding-left: 1vmin;
+    padding-right: 1vmin;
+    color: var(--color);
+    font-size: 1.4vmin;
+}
+
+.death .death-stats .death-stats-item span {
+    font-family: "Gilroy-Medium";
+    font-size: 1.4vmin;
+}

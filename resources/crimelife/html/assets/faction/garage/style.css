@@ -1,0 +1,134 @@
+.garage {
+    position: absolute;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 95vmin;
+    height: 70vmin;
+
+    border-radius: 0.8vmin;
+    background: var(--ordnerBg);
+    filter: drop-shadow(0ch 0.3vh 0.6770833333333334vw rgb(0, 0, 0));
+}
+
+.garage .garageContainer {
+    position: absolute;
+
+    top: 12vmin;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 89vmin;
+    max-height: 55vmin;
+
+	display: grid;
+    justify-content: space-between;
+	overflow-y: scroll;
+	grid-template-columns: repeat(3, 29vh);
+}
+
+.garage .garageContainer .garageItem {
+    margin-top: 1vmin;
+    position: relative;
+
+    top: -1vmin;
+
+    width: 28.8889vmin;
+    height: 14.537vmin;
+}
+
+.garage .garageContainer .garageItem .garageIMG {
+    position: absolute;
+
+    right: 0vmin;
+
+    width: 85%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.garage .garageContainer .garageItem .garageIMG .garageBGIMG {
+    position: absolute;
+
+    right: 0vmin;
+    height: 100%;
+}
+
+.garage .garageContainer .garageItem .garageIMG .garageVehicleIMG {
+    position: absolute;
+
+    top: 1.5741vmin;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 19.3519vmin;
+    height: 8.7037vmin;
+    object-fit: contain;
+}
+
+.garage .garageContainer .garageItem .parkOut {
+    position: absolute;
+
+    top: 0vmin;
+    left: 0vmin;
+
+    width: 2.6852vmin;
+    height: 14.537vmin;
+
+    background: var(--color);
+    box-shadow: 0vw 0.46875vw 2.1875vw 0vw var(--shadow);
+    border-radius: 0.2vmin;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+}
+
+.garage .garageContainer .garageItem .parkOut span {
+    position: absolute;
+
+    font-family: 'Gilroy-Medium';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.2vmin;
+    line-height: 1.1111vmin;
+    text-align: center;
+    color: #FFFFFF;
+
+    transform: rotate(90deg);
+}
+
+.garage .garageContainer .garageItem .garageIMG .garageVehicleName {
+    position: absolute;
+
+    bottom: 1vmin;
+    left: 1vmin;
+
+    width: auto;
+    height: 2.5926vmin;
+
+    padding-left: 1vmin;
+    padding-right: 1vmin;
+
+    background: var(--color);
+    box-shadow: 0vw 0.46875vw 2.1875vw 0vw var(--shadow);
+    border-radius: 0.2vmin;
+
+    font-family: 'Gilroy-Medium';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.1111vmin;
+    text-align: center;
+    color: #060303;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

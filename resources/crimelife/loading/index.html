@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+
+  <link type="text/css" rel="stylesheet" href="assets/css/style.css" />
+  <link type="text/css" rel="stylesheet" href="assets/css/fonts.css" />
+</head>
+
+<body>
+  <div class="form">
+    <div class="middle_cont clmn alcn">
+      <div class="row_header clmn alcn">
+        <span>DEIN SPIEL</span>
+        <span>LÄDT</span>
+      </div>
+      <span class="description">Willkommen auf Lightning Crimelife</span>
+      <div class="loading_cont clmn">
+        <div class="loading_flex alcn">
+          <span>LOADING...</span>
+          <span id="percentageLoad"></span>
+        </div>
+        <div class="novalue flex">
+          <div class="value" id="percentageImg">
+            <img src="assets/images/valueload.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="music_flex alcn">
+        <div class="wrap_name_music alcn">
+          <img src="assets/images/icnmus.png" alt="" id="music_image" />
+          <div class="row_name_music clmn">
+            <span id="name"></span>
+            <span id="author"></span>
+          </div>
+        </div>
+        <div class="functions_wrap flex">
+          <div class="box_skip jlcn" id="box_skip_backward">
+            <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M12 1.77957L12 15.2204L5.33333 9.88707L5.33333 14.5H4L4 2.49999H5.33333L5.33333 7.11291L12 1.77957ZM5.73385 8.49999L10.6667 4.55374V12.4462L5.73385 8.49999Z"
+                fill="white" />
+            </svg>
+          </div>
+          <div class="box_play jlcn" id="box_play">
+            <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M1.33331 3.11295L8.06717 8.5L1.33331 13.8871V3.11295ZM2.66665 5.8871V11.1129L5.93279 8.50001L2.66665 5.8871Z"
+                fill="white" />
+              <path d="M10.6666 3.83336V13.1667H9.33331V3.83336H10.6666Z" fill="white" />
+              <path d="M14.6666 3.83336V13.1667H13.3333V3.83336H14.6666Z" fill="white" />
+            </svg>
+          </div>
+          <div class="box_skip jlcn" id="box_skip_forward">
+            <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M4 15.2204L4 1.77959L10.6667 7.11293L10.6667 2.50001L12 2.50001L12 14.5L10.6667 14.5L10.6667 9.88709L4 15.2204ZM10.2661 8.50001L5.33333 12.4463L5.33333 4.55376L10.2661 8.50001Z"
+                fill="white" />
+            </svg>
+          </div>
+        </div>
+        <div class="volume_wrap alcn">
+          <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_2_96)">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M10.0351 0.5V16.1827L5.72283 11.008H3.36841V5.6747H5.72283L10.0351 0.5ZM8.70174 4.18273L6.34733 7.00803H4.70174V9.6747H6.34733L8.70174 12.5V4.18273Z"
+                fill="white" fill-opacity="0.45" />
+              <path
+                d="M11.1252 6.27553L11.7022 6.60935C12.2983 6.95415 12.7017 7.60025 12.7017 8.34137C12.7017 9.08249 12.2983 9.72859 11.7022 10.0734L11.1252 10.4072L10.4575 9.25307L11.0346 8.91926C11.2356 8.80298 11.3684 8.58729 11.3684 8.34137C11.3684 8.09545 11.2356 7.87976 11.0346 7.76348L10.4575 7.42967L11.1252 6.27553Z"
+                fill="white" fill-opacity="0.45" />
+            </g>
+            <defs>
+              <clipPath id="clip0_2_96">
+                <rect width="16" height="16" fill="white" transform="translate(0 0.5)" />
+              </clipPath>
+            </defs>
+          </svg>
+          <input id="volume-range" class="range-input" type="range" min="0" max="100" step="1" value="10" />
+          <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_2_100)">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M7.33335 0.65863V16.3414L3.0211 11.1667H0.666687V5.83333H3.0211L7.33335 0.65863ZM6.00002 4.34136L3.6456 7.16666H2.00002V9.83333H3.6456L6.00002 12.6586V4.34136Z"
+                fill="white" fill-opacity="0.45" />
+              <path
+                d="M12.3029 2.52387L12.8063 2.96098C14.3535 4.30453 15.3335 6.2882 15.3335 8.5C15.3335 10.7118 14.3535 12.6955 12.8063 14.039L12.3029 14.4761L11.4287 13.4694L11.9321 13.0323C13.2001 11.9312 14.0002 10.3094 14.0002 8.5C14.0002 6.69058 13.2001 5.0688 11.9321 3.96772L11.4287 3.53062L12.3029 2.52387Z"
+                fill="white" fill-opacity="0.45" />
+              <path
+                d="M10.3648 4.42159L10.8882 4.83451C11.97 5.68799 12.6665 7.0129 12.6665 8.50007C12.6665 9.98725 11.97 11.3122 10.8882 12.1656L10.3648 12.5786L9.53897 11.5318L10.0624 11.1188C10.8375 10.5073 11.3331 9.56177 11.3331 8.50007C11.3331 7.43838 10.8375 6.49282 10.0624 5.8813L9.53897 5.46839L10.3648 4.42159Z"
+                fill="white" fill-opacity="0.45" />
+              <path
+                d="M8.42344 6.43416L9.00051 6.76798C9.59657 7.11278 10 7.75888 10 8.5C10 9.24112 9.59657 9.88722 9.00051 10.232L8.42344 10.5658L7.7558 9.41171L8.33287 9.07789C8.53387 8.96161 8.66668 8.74592 8.66668 8.5C8.66668 8.25408 8.53387 8.03839 8.33287 7.92212L7.7558 7.5883L8.42344 6.43416Z"
+                fill="white" fill-opacity="0.45" />
+            </g>
+            <defs>
+              <clipPath id="clip0_2_100">
+                <rect width="16" height="16" fill="white" transform="translate(0 0.5)" />
+              </clipPath>
+            </defs>
+          </svg>
+        </div>
+      </div>
+    </div>
+
+    <script src="assets/js/config.js"></script>
+    <script src="assets/js/script.js"></script>
+  </div>
+</body>
+
+</html>

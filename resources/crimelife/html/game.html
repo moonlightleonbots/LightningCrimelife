@@ -1,0 +1,1040 @@
+<div class="hud">
+    <div class="hud-top-center"></div>
+
+    <div class="hud-time">
+        <div class="hud-time-item">
+            <i class="fa-solid fa-clock"></i>
+            <span id="hud-time">12:34</span>
+        </div>
+
+        <div class="hud-time-item">
+            <i class="fa-solid fa-calendar-days"></i>
+            <span id="hud-date">12:34</span>
+        </div>
+    </div>
+
+    <div class="hud-top-right">
+        <div class="servername">
+            <span>LIGHTNING <span style="color: #fff;">CRIMELIFE</span></span>
+        </div>
+
+        <span class="hud-top-right-id" id="playerId">ID <span style="color: #fff;">213</span></span>
+        <span class="hud-top-right-players" id="player-count"><span style="color: var(--color);">500</span>/250
+            SPIELER</span>
+
+        <div class="hud-itemContainer">
+            <div class="hud-item">
+                <div class="hud-item-strich1"></div>
+                <div class="hud-item-strich2"></div>
+                <i class="fa-solid fa-money-bills"></i>
+                <span class="hud-item-span" style="top: 1.2vmin;" id="player-money">$123.123.1232</span>
+            </div>
+
+            <div class="hud-item" id="drawWeapon_item">
+                <div class="hud-item-strich1" style="top: 50%; transform: translateY(-50%);"></div>
+                <i class="fa-solid fa-gun" style="top: 50%; transform: translateY(-50%);"></i>
+                <span class="hud-item-span" style="top:0.9vmin;" id="drawWeapon">Pistole - 16</span>
+            </div>
+
+            <div class="hud-item">
+                <div class="hud-item-strich1" style="top: 0vmin;"></div>
+                <div class="hud-item-strich3"></div>
+                <i class="fa-solid fa-users" style="top: 0vmin;"></i>
+                <span class="hud-item-span" id="playerJob">Bloods - Leader</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="hud-bottom-stats" id="hud-bottom-stats">
+        <div class="hud-bottom-statsItem">
+            <i class="fa-solid fa-crosshairs"></i>
+            <span style="margin-left: 3vmin;">KILLS: <span
+                    style="font-family: 'Gilroy-Regular'; color: rgba(255, 255, 255, 0.5); margin-left: 0.3vmin;"
+                    id="kills-val">123</span></span>
+        </div>
+
+        <div class="hud-bottom-statsItem">
+            <i class="fa-solid fa-skull"></i>
+            <span style="margin-left: 3vmin;">TODE: <span
+                    style="font-family: 'Gilroy-Regular'; color: rgba(255, 255, 255, 0.5); margin-left: 0.3vmin;"
+                    id="deaths-val">123</span></span>
+        </div>
+
+        <div class="hud-bottom-statsItem">
+            <i class="fa-solid fa-signal"></i>
+            <span style="margin-left: 3vmin;">K/D: <span
+                    style="font-family: 'Gilroy-Regular'; color: rgba(255, 255, 255, 0.5); margin-left: 0.3vmin;"
+                    id="kd-val">123</span></span>
+        </div>
+    </div>
+
+    <div class="hud-liga">
+        <img id="liga-img" src="img/ranks/gold1.png">
+        <span class="liga-rank">Your Rank</span>
+        <span class="liga-trophys" id="liga-val">2500/<span style="color: rgba(255, 255, 255, 0.5);">5000</span></span>
+    </div>
+
+    <div class="hud-bottom-right">
+        <!-- <div class="hud-bottom-right-background"></div> -->
+
+        <div class="hud-speedo-container" style="display: none;">
+            <div class="hud-kmh-text">
+                <div class="hud-bottom-kmh-text">120</div>
+                <div class="hud-bottom-kmh-title">KM/H</div>
+            </div>
+
+            <div class="hud-kmh-bar">
+                <div class="hud-kmh-bar-fill-box">
+                    <div class="hud-kmh-bar-fill"></div>
+                </div>
+                <div class="hud-kmh-bar-fill-box">
+                    <div class="hud-kmh-bar-fill"></div>
+                </div>
+                <div class="hud-kmh-bar-fill-box">
+                    <div class="hud-kmh-bar-fill"></div>
+                </div>
+                <div class="hud-kmh-bar-fill-box">
+                    <div class="hud-kmh-bar-fill"></div>
+                </div>
+                <div class="hud-kmh-bar-fill-box">
+                    <div class="hud-kmh-bar-fill"></div>
+                </div>
+                <div class="hud-kmh-bar-fill-box">
+                    <div class="hud-kmh-bar-fill"></div>
+                </div>
+                <div class="hud-kmh-bar-fill-box">
+                    <div class="hud-kmh-bar-fill"></div>
+                </div>
+                <div class="hud-kmh-bar-fill-box">
+                    <div class="hud-kmh-bar-fill"></div>
+                </div>
+                <div class="hud-kmh-bar-fill-box">
+                    <div class="hud-kmh-bar-fill"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="hud-bottom-center" style="display: none;">
+        <div class="hud-bottom-center-background"></div>
+
+        <div class="hud-progressbar-container">
+            <div class="hud-progressbar-title">WESTE NUTZEN</div>
+            <div class="hud-progressbar">
+                <div class="hud-progressbar-fill"></div>
+            </div>
+            <div class="hud-progressbar-percentage">75%</div>
+        </div>
+    </div>
+
+    <div class="hud-bottom-left">
+        <div class="hud-notification-container">
+            <!-- js -->
+        </div>
+    </div>
+
+    <span class="killed-player" style="display: none;">Spieler Getötet</span>
+    <span class="killed-money" style="display: none;">+ 250$</span>
+    <div class="hud-killfeed"></div>
+</div>
+
+<div id="gameconfig">
+    <div id="muteIcon" style="display: none;">
+        <div class="muteIcon"></div>
+    </div>
+
+    <div class="helpNotify" style="display: none;">
+        <div class="helpIcon">
+            <span>E</span>
+        </div>
+        <span>Drücke e um die Garage zu öffnen</span>
+    </div>
+
+    <div class="fps" style="display: none;">
+        <img class="BGIMG" src="img/background/bg.png">
+        <span>N/A</span>
+    </div>
+</div>
+
+<div id="deathsystem">
+    <div class="death" style="display: none;">
+        <img class="main__bg" src="img/background/shadow.png">
+        <img class="main__bg2" src="img/background/shadow.png">
+        <img class="death-liga" src="img/ranks/bronze1.png">
+        <img class="death-avatar" id="death-avatar" src="img/background/profile.png">
+
+        <span class="death-header">GETÖTET VON:</span>
+        <span class="death-name">69er_Zigeuner</span>
+        <div class="death-stats">
+            <div class="death-stats-item">
+                <i class="fa-solid fa-crosshairs"></i>
+                <span id="death-kills">123</span>
+            </div>
+            <div class="death-stats-item">
+                <i class="fa-solid fa-skull"></i>
+                <span id="death-deaths">123</span>
+            </div>
+            <div class="death-stats-item">
+                <i class="fa-solid fa-shield"></i>
+                <span id="death-kd">123</span>
+            </div>
+        </div>
+
+        <div class="death-progress">
+            <div class="death-innerprogress" id="death_progress"></div>
+        </div>
+    </div>
+
+    <div class="killstreak" style="display: none;">
+        <span class="killstreak-header">●●● STREAK ●●●</span>
+        <div class="kilstreakItem">
+            <div class="killstreak-left-points">
+                <span id="points_me">0</span>
+            </div>
+            <div class="killstreak-left-name">
+                <span id="me">DieEine</span>
+            </div>
+
+            <div class="killstreak-center">
+                <i class="fa-regular fa-swords"></i>
+            </div>
+
+            <div class="killstreak-right-points">
+                <span id="points_enemy">0</span>
+            </div>
+            <div class="killstreak-right-name">
+                <span id="enemy">Irgentein Name</span>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="joinCam" style="display: none;">
+    <img class="BGIMG" src="img/background/bg.png">
+    <div class="joinCamContainer">
+        <div class="joinCamItem left">
+            <i id="joinCam_icon" class="fa-solid fa-a"></i>
+            <span>Spawn Weiter</span>
+        </div>
+
+        <div class="joinCamItem right">
+            <i id="joinCam_icon" class="fa-solid fa-d"></i>
+            <span>Spawn Zurück</span>
+        </div>
+    </div>
+
+    <div class="joinCamItem center">
+        <i id="joinCam_icon" class="fa-solid fa-turn-down-left"></i>
+        <span>Spawn Bestätigen</span>
+    </div>
+
+    <span class="joinCamMapLocation" id="joinCamMapLocation">ARMY</span>
+</div>
+
+<div class="emoterad" style="display: none;">
+    <div class="rad rad1"><img id="rad1" src="img/emotes/dab.png"></div>
+    <div class="rad rad2"><img id="rad2" src="img/emotes/dancemoves.png"></div>
+    <div class="rad rad3"><img id="rad3" src="img/emotes/disco_dance.png"></div>
+    <div class="rad rad4"><img id="rad4" src="img/emotes/electroshuffle.png"></div>
+    <div class="rad rad5"><img id="rad5" src="img/emotes/floss.png"></div>
+    <div class="rad rad6"><img id="rad6" src="img/emotes/take_l.png"></div>
+    <div class="rad rad7"><img id="rad7" src="img/emotes/toosie_slide.png"></div>
+    <div class="rad rad8"><img id="rad8" src="img/emotes/hitit.png"></div>
+</div>
+
+<div class="main__container" style="display: none;">
+    <img class="main__bg" src="img/background/shadow.png">
+    <img class="main__bg2" src="img/background/shadow.png">
+    <div class="wrapper">
+        <div class="main__header">
+            <span class="main__header_firstSpan">LIGHTNING</span>
+            <span>PANEL</span>
+            <span>Manage dein Spiel Erlebniss</span>
+
+            <div class="close" style="top: 50%; transform: translateY(-50%);" onclick="closeAll()">ESC</div>
+
+            <div class="main__value">
+                <div class="main__valueItem">
+                    <i class="fa-solid fa-coins coins"></i>
+                    <span id="settings-coins">123.123.123</span>
+                </div>
+            </div>
+
+            <div class="main__header__items">
+                <div class="main__header__item" id="main__First_page" onclick="changeMainMenuPage(this, 'shop')">
+                    Shop
+                </div>
+                <div class="main__header__item" id="main__pvp__item" onclick="changeMainMenuPage(this, 'pvp')">PVP
+                </div>
+                <div class="main__header__item" onclick="changeMainMenuPage(this, 'battlepass')">Battlepass</div>
+                <div class="main__header__item" onclick="changeMainMenuPage(this, 'settings')">Settings</div>
+                <div class="main__header__item" onclick="changeMainMenuPage(this, 'inventory')">Inventory</div>
+                <div class="main__header__item" onclick="changeMainMenuPage(this, 'scoreboard')">Scoreboard</div>
+                <div class="main__header__item" onclick="changeMainMenuPage(this, 'factionlist')">Fraktions Liste</div>
+                <div class="main__header__item" onclick="changeMainMenuPage(this, 'cases')">Cases</div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main__wrapper" id="main__shop" style="display: s;">
+        <div class="main-shop-container">
+            <span class="shop-header">// WAFFEN</span>
+            <div class="shop-append" id="shop__weapons"></div>
+        </div>
+
+        <div class="main-shop-container">
+            <span class="shop-header">// ITEMS</span>
+            <div class="shop-append" id="shop__items"></div>
+        </div>
+
+        <div class="main-shop-container">
+            <span class="shop-header">// KILL EFFEKTE</span>
+            <div class="shop-append" id="shop__killeffects"></div>
+        </div>
+    </div>
+
+    <div class="main__wrapper" id="main__pvp" style="display: none;">
+        <div class="main-shop-container">
+            <span class="shop-header">// LOBBYS</span>
+
+            <div class="pvp-append" id="pvp_ffa"></div>
+        </div>
+
+        <div class="main-shop-container">
+            <span class="shop-header">// PRIVAT</span>
+            <div class="pvp-create-ffa-lobby">Erstellen</div>
+
+            <div class="pvp-append" id="pvp_privatelobbys"></div>
+        </div>
+
+        <div class="main-shop-container">
+            <span class="shop-header">// GUNGAME</span>
+
+            <div class="pvp-append" id="pvp_gungame"></div>
+        </div>
+    </div>
+
+    <div class="main__wrapper" id="main__battlepass" style="display: none;">
+        <div class="battlepass-free-container">
+            <div class="battlepass-title">
+                <p>KOSTENLOS</p>
+            </div>
+
+            <div class="battlepass-append" id="battlepass-free-container"></div>
+        </div>
+
+        <div class="battlepass-premium-container">
+            <div class="battlepass-title">
+                <p>PREMIUM</p>
+            </div>
+
+            <div class="battlepass-append" id="battlepass-premium-container"></div>
+
+            <div class="battlepass-premium-blur"></div>
+            <span class="battlepass-premium-blur-span">CLICK TO UNLOCK</span>
+        </div>
+
+        <div class="battlepass-trade-container">
+            <span class="battlepass-header" id="battlepass_xp_header">// GELD ZU XP TAUSCHEN</span>
+
+            <div class="battlepass-trade-item">
+                <input type="text" placeholder="213456" oninput="BerechneXP(this.value)">
+                <button onclick="changeMoneyToXp()">TAUSCHEN</button>
+            </div>
+        </div>
+
+        <div class="battlepass-quests-container">
+            <span class="battlepass-header">// TÄGLICHE AUFGABEN</span>
+
+            <div class="battlepass-quests-append"></div>
+        </div>
+    </div>
+
+    <div class="main__wrapper" id="main__scoreboard" style="display: none;">
+        <div class="scoreboard-header"></div>
+
+        <div class="scoreboard-all-container">
+            <h1>SCOREBOARD</h1>
+            <div class="scoreboard-all-header">
+                <div class="scoreboard-all-header-item" onclick="changeScoreboardPage(this, 'main')">MAIN</div>
+                <div class="scoreboard-all-header-item" onclick="changeScoreboardPage(this, 'ffa')">FFA</div>
+                <div class="scoreboard-all-header-item" onclick="changeScoreboardPage(this, 'liga')">LIGA</div>
+                <div class="scoreboard-all-header-item" onclick="changeScoreboardPage(this, 'midrolls')">MIDROLLS
+                </div>
+                <div class="scoreboard-all-header-item" onclick="changeScoreboardPage(this, 'battlepass')">
+                    BATTLEPASS
+                </div>
+            </div>
+
+            <div class="scoreboard-all-second-container" id="scoreboard_main" style="display: s;">
+                <div class="scoreboard-info-header">
+                    <span>#</span>
+                    <span>Name</span>
+                    <span>Kills</span>
+                    <span>K/D</span>
+                </div>
+
+                <div class="scoreboard-append-container" id="scoreboard_main_append"></div>
+            </div>
+
+            <div class="scoreboard-all-second-container" id="scoreboard_ffa" style="display: none;">
+                <div class="scoreboard-info-header">
+                    <span>#</span>
+                    <span>Name</span>
+                    <span>Kills</span>
+                    <span>K/D</span>
+                </div>
+
+                <div class="scoreboard-append-container" id="scoreboard_ffa_append"></div>
+            </div>
+
+            <div class="scoreboard-all-second-container" id="scoreboard_liga" style="display: none;">
+                <div class="scoreboard-info-header">
+                    <span>#</span>
+                    <span>Name</span>
+                    <span>Trophäen</span>
+                    <span>Liga</span>
+                </div>
+
+                <div class="scoreboard-append-container" id="scoreboard_liga_append"></div>
+            </div>
+
+            <div class="scoreboard-all-second-container" id="scoreboard_midrolls" style="display: none;">
+                <div class="scoreboard-info-header">
+                    <span>#</span>
+                    <span>Name</span>
+                    <span
+                        style="right: 1.7vmin; text-align: right;  display: flex; align-items: center; justify-content: flex-end;">Midrolls</span>
+                </div>
+
+                <div class="scoreboard-append-container" id="scoreboard__midrolls_append">
+                    <div class="scoreboard-append-item">
+                        <span>1</span>
+                        <span>69er_Zigeuner</span>
+                        <span
+                            style="right: 1.7vmin; text-align: right;  display: flex; align-items: center; justify-content: flex-end;">1</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="scoreboard-all-second-container" id="scoreboard_battlepass" style="display: none;">
+                <div class="scoreboard-info-header">
+                    <span>#</span>
+                    <span>Name</span>
+                    <span>EXP</span>
+                    <span>Level</span>
+                </div>
+
+                <div class="scoreboard-append-container" id="scoreboard_battlepass_append"></div>
+            </div>
+        </div>
+
+        <!-- <div class="scoreboard-faction-container">
+            <h1>FRAKTIONEN</h1>
+
+            <div class="scoreboard-factions-append" id="scoreboard_factions_append"></div>
+        </div> -->
+    </div>
+
+    <div class="main__wrapper" id="main__settings" style="display: none;">
+        <div class="settings-toggles">
+            <div class="settings-item">
+                <div class="settings-icon">
+                    <i class="fa-solid fa-up"></i>
+
+                    <span>FPS BOOST</span>
+                    <span>SCHALTE DEIN FPS BOOST AN UND AUS</span>
+
+                    <label class="checkbox2">
+                        <input id="fps_boost_checked" type="checkbox" onclick="settingsAction('fps_boost')">
+                        <div class="settingsChecker"></div>
+                    </label>
+                </div>
+            </div>
+            <div class="settings-item">
+                <div class="settings-icon">
+                    <i class="fa-solid fa-map"></i>
+
+                    <span>HUD</span>
+                    <span>SCHALTE DIE HUD MANUELL EIN UND WIEDER AUS</span>
+
+                    <label class="checkbox2">
+                        <input id="hud_check" type="checkbox" onclick="settingsAction('hud_toggle')">
+                        <div class="settingsChecker"></div>
+                    </label>
+                </div>
+            </div>
+            <div class="settings-item">
+                <div class="settings-icon">
+                    <i class="fa-solid fa-eye"></i>
+
+                    <span>FPS ANZEIGE</span>
+                    <span>SEHE DEINE AKTUELLEN FPS</span>
+
+                    <label class="checkbox2">
+                        <input id="fps_show_checked" type="checkbox" onclick="settingsAction('fps_show_toggle')">
+                        <div class="settingsChecker"></div>
+                    </label>
+                </div>
+            </div>
+            <div class="settings-item">
+                <div class="settings-icon">
+                    <i class="fa-solid fa-rss"></i>
+
+                    <span>KILLFEED</span>
+                    <span>SCHALTE DEN KILLFEED AN UND AUS</span>
+
+                    <label class="checkbox2">
+                        <input id="killfeed_check" type="checkbox" onclick="settingsAction('feed_toggle')">
+                        <div class="settingsChecker"></div>
+                    </label>
+                </div>
+            </div>
+            <div class="settings-item">
+                <div class="settings-icon">
+                    <i class="fa-solid fa-skull"></i>
+
+                    <span>KILL MARKER</span>
+                    <span>SCHALTE DEN KILL MARKER AN UND AUS</span>
+
+                    <label class="checkbox2">
+                        <input id="killmarker_checked" type="checkbox" onclick="settingsAction('killmarker_toggle')">
+                        <div class="settingsChecker"></div>
+                    </label>
+                </div>
+            </div>
+            <div class="settings-item">
+                <div class="settings-icon">
+                    <i class="fa-solid fa-volume"></i>
+
+                    <span>SPRACH INDIKATOR</span>
+                    <span>SEHEN OB SPIELER IN DEINER NÄHE SPRECHEN</span>
+
+                    <label class="checkbox2">
+                        <input id="speak_check" type="checkbox" onclick="settingsAction('speak_toggle')">
+                        <div class="settingsChecker"></div>
+                    </label>
+                </div>
+            </div>
+
+            <div class="settings-item">
+                <div class="settings-icon">
+                    <i class="fa-solid fa-clock"></i>
+
+                    <span>UHRZEIT</span>
+                    <span id="time_value">00:00 UHR</span>
+
+                    <input class="settings-slider" id="time-control" type="range" min="1" max="24" step="1"
+                        oninput="changeTime(this.value)"></input>
+                </div>
+            </div>
+
+            <div class="settings-item">
+                <div class="settings-icon">
+                    <i class="fa-solid fa-clock"></i>
+
+                    <span>FREEZE TIME</span>
+                    <span>FRIERE DEINE AKTUELLE ZEIT EIN</span>
+
+                    <label class="checkbox2">
+                        <input id="freeze_check" type="checkbox" onclick="freezeTime()">
+                        <div class="settingsChecker"></div>
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <div class="settings-weather">
+            <div class="settings-weather-item" onclick="setWeather('weather1', 'EXTRASUNNY')">
+                <span>SONNIG</span>
+                <img src="img/weather/sun.png" draggable="false">
+                <div class="settings-weather-icon" id="weather1"></div>
+            </div>
+            <div class="settings-weather-item" onclick="setWeather('weather2', 'XMAS')">
+                <span>SCHNEE</span>
+                <img src="img/weather/snow.png" draggable="false">
+                <div class="settings-weather-icon" id="weather2"></div>
+            </div>
+            <div class="settings-weather-item" onclick="setWeather('weather3', 'RAIN')">
+                <span>REGEN</span>
+                <img src="img/weather/rain.png" draggable="false">
+                <div class="settings-weather-icon" id="weather3"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="main__wrapper" id="main__inventory" style="display: none;">
+        <div class="inventory-weapons">
+            <span class="inventory-header">// WAFFEN</span>
+            <div class="inventory-weapons-append"></div>
+        </div>
+
+        <div class="inventory-items">
+            <span class="inventory-header">// ITEMS</span>
+            <div class="inventory-items-append"></div>
+        </div>
+
+        <div class="inventory-attachments">
+            <span class="inventory-header">// AUFSÄTZE</span>
+            <div class="inventory-attachments-append"></div>
+        </div>
+
+        <div class="inventory-skins">
+            <span class="inventory-header">// TARNUNGEN</span>
+
+            <div class="inventory-skins-append"></div>
+        </div>
+    </div>
+
+    <div class="main__wrapper" id="main__cases" style="display: none;">
+        <div class="cases__chose">
+            <span class="cases__chose-header">CASE AUSWÄHLEN</span>
+            <span class="cases__chose-desc-header">WÄHLEN SIE EIN CASE AUS WAS SIE ÖFFNEN WOLLEN</span>
+
+            <div class="cases-append"></div>
+        </div>
+
+        <div class="case-preview">
+            <img id="current-case-img" style="display: none;" src="img/cases/bronzecase.png">
+            <span class="current-case">WÄHLE DEIN CASE AUS</span>
+            <span class="case-price" style="display: none;">123 COINS</span>
+            <button class="case-buy" style="display: none;" onclick="buyCurrentCase()">KAUFEN</button>
+
+            <img class="win-icon" src="img/win.png">
+            <img class="win-reward" src="img/weapons/money.png">
+            <button class="case-claim" style="display: none;" onclick="claimCase()">ABHOLEN</button>
+
+            <span class="case-win-header" style="display: none;">DU HAST GEZOGEN</span>
+            <span class="case-win" style="display: none;">2x Tokens</span>
+        </div>
+    </div>
+
+    <div id="main__pvp_create_lobby" style="display: none;">
+        <span class="creatorLobbyHeader">LOBBY ERSTELLEN</span>
+
+        <div class="ffa-create-wrapper">
+            <div class="ffa-create-item-container">
+                <div class="ffa-create-item">
+                    <i class="fa-solid fa-user"></i>
+                    <span>Lobby Name</span>
+                    <input type="text" class="ffa-create-input" placeholder="Lobby Name" id="ffa-create-lobby-name">
+                </div>
+
+                <div class="ffa-create-item">
+                    <i class="fa-solid fa-map"></i>
+                    <span>Lobby Map</span>
+                    <select class="ffa-create-dropdown" onchange="selectFFAMap()"></select>
+                    <img id="ffa-create-map" src="img/ffa/triaden.png" alt="Selected map preview">
+                </div>
+
+                <div class="ffa-create-item">
+                    <i class="fa-solid fa-lock"></i>
+                    <span>Lobby Passwort</span>
+                    <input type="password" class="ffa-create-input" placeholder="Lobby Passwort"
+                        id="ffa-create-lobby-password">
+                </div>
+            </div>
+
+
+            <button class="ffa-create-button" onclick="createFFALobby()">ERSTELLEN</button>
+            <button class="ffa-create-deny-button">ABBRECHEN</button>
+        </div>
+    </div>
+
+    <div class="main__loading" style="display: none;"></div>
+</div>
+
+<div class="funk" style="display: none;">
+    <img src="img/background/phone.png">
+    <span>FUNKSTATUS:</span>
+    <span class="funk-status"></span>
+    <div class="funk-shadow"></div>
+
+    <div class="funk-join-header"></div>
+
+    <div class="funk-settings">
+        <span class="funk-settings-header">EINSTELLUNGEN</span>
+        <div class="funk-settings-item">
+            <span>Funksound</span>
+
+            <label class="checkbox">
+                <input type="checkbox" id="funk_sound_check" onclick="FunkSoundToggle()">
+                <div class="input"></div>
+            </label>
+        </div>
+    </div>
+
+    <div class="funk-animations">
+        <span class="funk-animations-header">ANIMATIONEN</span>
+
+
+        <div class="funk-settings-item">
+            <span>Normal</span>
+
+            <label class="checkbox">
+                <input type="checkbox" id="funk-animation-item"
+                    onclick="ChangeFunkSound('funk-animation-item', 'random@arrests', 'generic_radio_enter')">
+                <div class="input"></div>
+            </label>
+        </div>
+
+        <div class="funk-settings-item">
+            <span>Brust</span>
+
+            <label class="checkbox">
+                <input type="checkbox" id="funk-animation-item2"
+                    onclick="ChangeFunkSound('funk-animation-item2', 'anim@cop_mic_pose_002', 'chest_mic')">
+                <div class="input"></div>
+            </label>
+        </div>
+
+        <div class="funk-settings-item">
+            <span>Handy</span>
+
+            <label class="checkbox">
+                <input type="checkbox" id="funk-animation-item3"
+                    onclick="ChangeFunkSound('funk-animation-item3', 'cellphone@', 'cellphone_call_listen_base')">
+                <div class="input"></div>
+            </label>
+        </div>
+    </div>
+</div>
+
+<div class="pvpBanner" style="display: none;">
+    <span>ERINNERUNG</span>
+    <span>SCHAUE HEUTE NOCHMAL BEI UNSEREM FFA VORBEI UND GUCKE DIR AUCH DIE PRIVATELOBBYS AN</span>
+    <i class="fa-solid fa-file"></i>
+</div>
+
+<div id="factions">
+    <div class="faction-list" style="display: none;">
+        <span class="faction-list-header">LIGHTNING</span>
+        <span class="faction-list-desc">FRAKTIONSLISTE</span>
+        <span class="faction-list-desc-second">Hier siehst du alle Fraktionen und ob sie angreifbar sind. Wenn eine
+            Fraktion Bewerbungen offen hat, kannst du dich hier bewerben.</span>
+
+        <div class="faction-list-append"></div>
+    </div>
+
+    <div class="creator" style="display: none;">
+        <img class="BGIMG" src="img/background/bg.png">
+        <div class="header">
+            <span>LIGHTNING</span>
+            <span>CRIMELIFE</span>
+            <span>FRAKTIONS VERWALTUNG</span>
+            <div class="close" onclick="closeAll()">ESC</div>
+            <div class="top-item-gwclear" onclick="FactionCreator_ClearGangwar()">GANGWAR CLEAR</div>
+        </div>
+
+        <div class="creator-list"></div>
+
+        <div class="creator-creation">
+            <h1>FRAKTION ERSTELLEN</h1>
+
+            <div class="creator-creation-item">
+                <i class="fa-solid fa-user"></i>
+                <span>Label</span>
+                <input type="text" class="creator-creation-item-input" placeholder="Bloods" id="jobcreator-label">
+            </div>
+
+            <div class="creator-creation-item">
+                <i class="fa-solid fa-user"></i>
+                <span>Name</span>
+                <input type="text" class="creator-creation-item-input" placeholder="bloods" id="jobcreator-name">
+            </div>
+
+            <div class="creator-creation-item">
+                <i class="fa-solid fa-copy" onclick="setCurrentCoords('vec3', 'jobcreator-respawn')"></i>
+                <span>Respawn</span>
+                <input type="text" class="creator-creation-item-input" placeholder="vec3(123, 123, 123)"
+                    id="jobcreator-respawn">
+            </div>
+
+            <div class="creator-creation-item">
+                <i class="fa-solid fa-copy" onclick="setCurrentCoords('vec4', 'jobcreator-spawnpoint')"></i>
+                <span>Auto Spawner</span>
+                <input type="text" class="creator-creation-item-input" placeholder="vec3(123, 123, 123)"
+                    id="jobcreator-spawnpoint">
+            </div>
+
+            <div class="creator-creation-item">
+                <i class="fa-solid fa-thin fa-palette"></i>
+                <span>Blip Farbe</span>
+                <input type="text" class="creator-creation-item-input" placeholder="1" id="jobcreator-color-blip">
+            </div>
+
+            <div class="creator-creation-item">
+                <i class="fa-solid fa-thin fa-palette"></i>
+                <span style="top: 50%; transform: translateY(-50%);">Main Farbe</span>
+                <input type="color" class="creator-creation-item-input-color" placeholder="1" id="jobcreator-color">
+            </div>
+
+            <button onclick="createFaction()">ERSTELLEN</button>
+        </div>
+    </div>
+
+    <div class="garage" style="display: none;">
+        <img class="BGIMG" src="img/background/bg.png">
+        <div class="header">
+            <span>LIGHTNING</span>
+            <span>CRIMELIFE</span>
+            <span>GARAGE</span>
+            <div class="close" onclick="closeAll()">ESC</div>
+        </div>
+
+        <div class="garageContainer">
+            <div class="garageItem">
+                <div class="parkOut" onclick="parkOut('${value.name}')">
+                    <span>AUSPARKEN</span>
+                </div>
+                <div class="garageIMG">
+                    <img class="garageBGIMG" src="img/background/vehicleItem.png">
+                    <img class="garageVehicleIMG" src="img/background/vehicle.png">
+                    <span class="garageVehicleName">${value.label}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="factionmenu" style="display: none;">
+        <img class="BGIMG" src="img/background/bg.png">
+        <div class="header" style="top: 4vmin;">
+            <span>LIGHTNING</span>
+            <span>CRIMELIFE</span>
+            <span>FRAKTIONS MENÜ</span>
+            <div class="close" onclick="closeAll()">ESC</div>
+        </div>
+
+        <div class="leftContainer">
+            <span class="leftHeader">// MEMBERS</span>
+            <span class="leftBottomHeader">5/10 Online</span>
+
+            <div class="factionMembersAppend"></div>
+        </div>
+
+        <div class="rightContainer">
+            <div class="whatsappBG"></div>
+            <span class="leftHeader" style="left: 2vmin;">// FRAKTIONS CHAT</span>
+
+            <div class="chatAppend"></div>
+
+            <input type="text" class="chatContainer" placeholder="MESSAGE HERE..." id="faction_chatInput">
+            <i id="chatSend" class="fa-solid fa-paper-plane" onclick="chat_send()"></i>
+        </div>
+    </div>
+
+    <div class="invite" style="display: none;">
+        <img class="BGIMG" src="img/background/bg.png">
+        <div class="header" style="top: 0vmin;">
+            <span>LIGHTNING</span>
+            <span>CRIMELIFE</span>
+            <span>FRAKTIONS INVITE</span>
+            <div class="close" onclick="closeAll()">ESC</div>
+        </div>
+
+        <span class="invite-faction">Fraktion: <span
+                style="color: purple; font-family: Gilroy-Regular;">Ballas</span></span>
+        <span class="invite-name">Inviter: DieEine[123]</span>
+
+        <button onclick="acceptInvite()" class="inv-accept">ANNEHMEN</button>
+        <button onclick="denyInvite()" class="inv-deny">ABLEHNEN</button>
+    </div>
+
+    <div class="gangwar" style="display: none;">
+        <img class="gw-shadow" src="img/background/shadow.png">
+
+        <div class="gw-leftFaction">
+            <i class="fa-solid fa-skull"></i>
+            <span id="gwLeftFaction">LCN</span>
+            <span id="gwLeftPoints">123</span>
+
+            <div class="gw-leftFaction-shadow"></div>
+        </div>
+
+        <div class="gw-header">
+            <span>LIGHTNING</span>
+            <span>GANGWAR</span>
+            <span id="GWTIME">30:00</span>
+        </div>
+
+        <div class="gw-rightFaction">
+            <span id="gwRightPoints">123</span>
+            <span id="gwRightFaction">LCN</span>
+            <i class="fa-solid fa-skull"></i>
+
+            <div class="gw-rightFaction-shadow"></div>
+        </div>
+    </div>
+
+    <div class="gangwarScoreboard" style="display: none;">
+        <img class="BGIMG" src="img/background/bg.png">
+        <div class="header">
+            <span>LIGHTNING</span>
+            <span>CRIMELIFE</span>
+            <span>GANGWAR ERGEBNISSE</span>
+            <div class="close" onclick="closeAll()">ESC</div>
+        </div>
+
+        <div class="GWS-factionContainer">
+            <h1 class="GWS-factionName" id="GWS-LEFTFACTIONNAME">Keulers</h1>
+            <span class="GWS-factionPoints" id="GWS-LEFTFACTIONPOINTS">213 Punkte</span>
+            <div class="GWS-factionAppend">
+                <div class="GWS-factionTopItem">
+                    <span class="GWS-place">#</span>
+                    <span class="GWS-name">Name</span>
+
+                    <div class="factionTopItemLeft">
+                        <span>Kills</span>
+                        <span>Deaths</span>
+                        <span>K/D</span>
+                    </div>
+                </div>
+
+                <div id="GWS-LEFTFACTION"></div>
+            </div>
+        </div>
+
+        <div class="GWS-factionContainer">
+            <h1 class="GWS-factionName" id="GWS-RIGHTFACTIONNAME">Keulers</h1>
+            <span class="GWS-factionPoints" id="GWS-RIGHTFACTIONPOINTS">213 Punkte</span>
+
+            <div class="GWS-factionAppend">
+                <div class="GWS-factionTopItem">
+                    <span class="GWS-place">#</span>
+                    <span class="GWS-name">Name</span>
+
+                    <div class="factionTopItemLeft">
+                        <span>Kills</span>
+                        <span>Deaths</span>
+                        <span>K/D</span>
+                    </div>
+                </div>
+
+                <div id="GWS-RIGHTFACTION"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="event">
+    <div class="rules" style="display: none;">
+        <img class="BGIMG" src="img/background/bg.png">
+        <h1>WICHTIG!</h1>
+        <span>IN EVENTS GILT EINE PERMANENTE AUFNAHMEPFLICHT</span>
+        <img class="ruleIcon" src="img/background/kamera.png">
+        <button onclick="openRulesContainer()">VERSTANDEN</button>
+    </div>
+
+    <div class="rulesContainer" style="display: none;">
+        <img class="BGIMG" src="img/background/bg.png">
+        <h1>EVENT REGELN</h1>
+
+        <div class="rulesItemsContainer">
+            <div class="rulesItem">● Insofern es sich nicht um ein Duo oder Trio Event handelt ist Teaming
+                Verboten
+            </div>
+            <div class="rulesItem">● Nachdem du gestorben bist ist ein wiedereinstieg in das event nicht mehr
+                möglich</div>
+            <div class="rulesItem">● campen auf dächern erhöhungen und aussichtstürmen ist verboten </div>
+            <div class="rulesItem">● Combatlog im Event ist verboten</div>
+            <div class="rulesItem">● das brechen der event-regeln wird mit einem 2 Stunden ban Bestraft</div>
+        </div>
+
+        <button onclick="acceptEventRules()">AKTZEPTIEREN</button>
+    </div>
+</div>
+
+<div id="match">
+    <div class="match__container" style="display: none;">
+        <img class="BGIMG" src="img/background/bg.png">
+        <div class="header" style="top: 2vmin; width: 57vmin; left: 50%; transform: translateX(-50%) scale(0.8);">
+            <span>LIGHTNING</span>
+            <span>CRIMELIFE</span>
+            <span>MATCH MAKING</span>
+            <div class="close" onclick="closeAll()">ESC</div>
+        </div>
+
+        <input class="match__idContainer" type="number" placeholder="ID">
+
+        <span class="match__rounds">Runden: 1</span>
+        <input class="match__slider" id="match__slider" type="range" min="1" max="10" step="1"
+            oninput="changeMatchRounds(this.value)"></input>
+
+        <div class="match__mapItem">
+            <img id="match__currentZoneImage" src="img/ffa/Flugplatz.png">
+            <span class="match__currentZoneName">Flugplatz</span>
+            <i class="fa-solid fa-arrow-right" onclick="nextMatch()"></i>
+        </div>
+
+        <button onclick="requestMatch()" class="match__request1vs1">HERAUSFORDERN</button>
+        <button onclick="denyMatch()" class="match__deny1vs1" style="display: none;">ZURÜCK</button>
+
+        <div class="match__waitingforAnswer" style="display: none;">
+            <h1>Warte auf Gegner</h1>
+            <span>Läuft in 60 Sekunden ab</span>
+        </div>
+    </div>
+
+    <span class="match__ready" style="display: none;">MACH DICH BEREIT</span>
+
+    <span class="match__winner" style="display: none;">GEWONNEN</span>
+    <span class="match__winnerScore" style="display: none;">2 - 1</span>
+
+    <span class="match__loser" style="display: none;">VERLOREN</span>
+    <span class="match__loserScore" style="display: none;">2 - 1</span>
+</div>
+
+<div id="menu_dialog"></div>
+<div id="menu_default"></div>
+<span class="animationText"></span>
+<input class="chat" type="text" placeholder="Nachricht" style="display: none;" maxlength="100">
+
+<div class="request__container" style="display: none;" id="Inventory_Weapon_Trash">
+    <img class="BGIMG" src="img/background/bg.png">
+
+    <span>WAFFE WEG WERFEN</span>
+    <span>MÖCHTEST DU WIRKLICH DEINE WAFFE WEG WERFEN</span>
+
+    <button onclick="Inventory_Weapon_Trash_Accept()">JA</button>
+    <button onclick="Inventory_Weapon_Trash_Deny()">NEIN</button>
+</div>
+
+<div class="request__container" style="display: none;" id="Inventory_Item_Share">
+    <img class="BGIMG" src="img/background/bg.png">
+
+    <span>ITEM BENUTZEN</span>
+    <span>MÖCHTEST DU WIRKLICH DIESES ITEM BENUTZEN</span>
+
+    <button onclick="Inventory_Item_Share_Accept()">JA</button>
+    <button onclick="Inventory_Item_Share_Deny()">NEIN</button>
+</div>
+
+<div class="request__container" style="display: none;" id="FactionCreator_ClearGangwar">
+    <img class="BGIMG" src="img/background/bg.png">
+
+    <span>GANGWAR GEBIETE ZURÜCKSETZEN</span>
+    <span>MÖCHTEST DU WIRKLICH ALLE GANGWAR GEBIETE ZURÜCKSETZEN</span>
+
+    <button onclick="FactionCreator_ClearGangwar_Accept()">JA</button>
+    <button onclick="FactionCreator_ClearGangwar_Deny()">NEIN</button>
+</div>
+
+<div class="request__container" style="display: none;" id="FactionCreator_ClearGang">
+    <img class="BGIMG" src="img/background/bg.png">
+
+    <span>FRAKTIONSMITGLIEDER CLEAR</span>
+    <span>MÖCHTEST DU WIRKLICH ALLE FRAKTIONSMITGLIEDER KICKEN</span>
+
+    <button onclick="FactionCreator_ClearGang_Accept()">JA</button>
+    <button onclick="FactionCreator_ClearGang_Deny()">NEIN</button>
+</div>
+
+<div class="request__container" style="display: none;" id="FactionCreator_DeleteGang">
+    <img class="BGIMG" src="img/background/bg.png">
+
+    <span>FRAKTION LÖSCHEN</span>
+    <span>MÖCHTEST DU WIRKLICH DIESE FRAKTION LÖSCHEN</span>
+
+    <button onclick="FactionCreator_DeleteGang_Accept()">JA</button>
+    <button onclick="FactionCreator_DeleteGang_Deny()">NEIN</button>
+</div>

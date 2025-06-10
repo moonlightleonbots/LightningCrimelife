@@ -1,0 +1,24 @@
+.fps {
+    position: absolute;
+
+    bottom: 1vmin;
+    left: 50%;
+    transform: translateX(-50%);
+
+    width: 6vmin;
+    height: 2.3vmin;
+
+    border-radius: 0.2vmin;
+    filter: drop-shadow(0ch 0.3vh 0.6770833333333334vw rgb(0, 0, 0));
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family: "Akrobat";
+    font-size: 1.4vmin;
+}
+
+.fps span {
+    position: absolute;
+}

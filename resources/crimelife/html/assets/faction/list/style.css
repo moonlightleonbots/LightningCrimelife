@@ -1,0 +1,176 @@
+@keyframes fromLeft {
+    0% {
+        right: -100%;
+    }
+
+    100% {
+        right: 0;
+    }
+}
+
+@keyframes slideDown {
+    0% {
+        top: -4vmin;
+        opacity: 0;
+    }
+
+    100% {
+        top: 0;
+        opacity: 1;
+    }
+}
+
+.faction-list {
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    background: linear-gradient(-90.03deg, rgba(12, 0, 0, 0.95) 1%, rgba(0, 0, 0, 0) 100%);
+
+    animation: fromLeft 0.7s ease-out;
+}
+
+.faction-list .faction-list-header {
+    position: absolute;
+
+    top: 8vmin;
+    right: 4vmin;
+
+    font-family: "Akrobat";
+    font-size: 4vmin;
+}
+
+.faction-list .faction-list-desc {
+    position: absolute;
+
+    top: 12vmin;
+    right: 4vmin;
+
+    font-family: "Press Start 2P", cursive;
+    font-size: 2vmin;
+
+    color: var(--color);
+}
+
+.faction-list .faction-list-desc-second {
+    width: 20%;
+    position: absolute;
+
+    top: 16vmin;
+    right: 4vmin;
+
+    font-family: "Gilroy-Medium";
+    font-size: 1.4vmin;
+
+    text-align: right;
+
+    color: rgba(255, 255, 255, 0.5);
+
+}
+
+.faction-list .faction-list-append {
+    position: absolute;
+
+    top: 26vmin;
+    right: 4vmin;
+
+    width: 45vmin;
+    height: 60vmin;
+
+    overflow: auto;
+}
+
+.faction-list .faction-list-append .faction-list-item {
+    margin-top: 1vmin;
+
+    position: relative;
+
+    width: 100%;
+    height: 5vmin;
+
+    border-radius: 0.5vmin;
+
+    animation: slideDown 0.5s ease-out;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    cursor: pointer;
+}
+
+.faction-list .faction-list-append .faction-list-item::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(49.95% 18583.44% at 50.05% 50%, rgba(218, 218, 218, 0.06) 0%, rgba(218, 218, 218, 0) 100%);
+    transition: opacity 0.2s ease;
+}
+
+.faction-list .faction-list-append .faction-list-item::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(49.95% 18583.44% at 50.05% 50%, rgba(218, 218, 218, 0.1) 0%, rgba(218, 218, 218, 0) 100%);
+    opacity: 0;
+    transition: opacity 0.2s ease;
+}
+
+.faction-list .faction-list-append .faction-list-item:hover::before {
+    opacity: 0;
+}
+
+.faction-list .faction-list-append .faction-list-item:hover::after {
+    opacity: 1;
+}
+
+.faction-list .faction-list-append .faction-list-item i {
+    position: absolute;
+    font-size: 2vmin;
+    margin-left: 1vmin;
+}
+
+.faction-list .faction-list-append .faction-list-item .faction-name {
+    width: 20vmin;
+    margin-left: 4.5vmin;
+
+
+    font-family: "Gilroy-Medium";
+    font-size: 1.2vmin;
+
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.faction-list .faction-list-append .faction-list-item .faction-members {
+    margin-left: 4.5vmin;
+
+
+    font-family: "Gilroy-Medium";
+    font-size: 1.1vmin;
+}
+
+.faction-list .faction-list-append .faction-list-item button {
+    position: absolute;
+
+    right: 1vmin;
+
+    width: 15vmin;
+    height: 3vmin;
+
+    background: radial-gradient(86.36% 653.13% at 50% 50%, rgba(224, 16, 16, 0.15) 0%, rgba(224, 16, 16, 0) 100%);
+    border: 0.0926vmin solid rgba(224, 16, 16, 0.1);
+
+    color: rgb(224, 16, 16);
+
+    cursor: pointer;
+
+    font-family: 'Gilroy-Regular';
+    font-size: 1.3vmin;
+
+    transition: 0.2s all;
+}
