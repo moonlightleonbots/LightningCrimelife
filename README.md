@@ -3,7 +3,7 @@
 
 ---
 
-## ![Techstack  ](https://img.shields.io/badge/ 🖥️-Tech_Stack-6A0DAD)  
+## ![Techstack](https://img.shields.io/badge/🖥️-Tech_Stack-6A0DAD)  
 🚀 **Verwendete Programmiersprachen:**  
 ![Lua](https://img.shields.io/badge/Lua-000000?style=for-the-badge&logo=lua&logoColor=6A0DAD)
 ![HTML](https://img.shields.io/badge/HTML5-000000?style=for-the-badge&logo=html5&logoColor=6A0DAD)
