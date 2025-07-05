@@ -1,4 +1,4 @@
-# ![LightningCrimelife  ](https://img.shields.io/badge/⚡-black-LightningCrimelife-6A0DAD)  
+# ![LightningCrimelife  ](https://img.shields.io/badge/⚡-LightningCrimelife-6A0DAD)  
 ### Lightning Crimelife - Full Base - Neuste Version  
 
 ---
