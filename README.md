@@ -10,8 +10,7 @@
 ![CSS](https://img.shields.io/badge/CSS3-000000?style=for-the-badge&logo=css3&logoColor=6A0DAD)
 ![JavaScript](https://img.shields.io/badge/JavaScript-000000?style=for-the-badge&logo=javascript&logoColor=6A0DAD)
 ![Node.js](https://img.shields.io/badge/Node.js-000000?style=for-the-badge&logo=node.js&logoColor=6A0DAD)
-
-🗄 **Datenbank:**  
+![Datenbank](https://img.shields.io/badge/Datenbank-000000?style=for-the-badge&logo=mysql&logoColor=6A0DAD)
 ![MySQL](https://img.shields.io/badge/MySQL-000000?style=for-the-badge&logo=mysql&logoColor=6A0DAD)  
 
 🛠️ **Tools:**  
