@@ -14,7 +14,7 @@
 
 ![Datenbank](https://img.shields.io/badge/Datenbank-000000?style=for-the-badge&logo=mysql&logoColor=6A0DAD)
 
-![MySQL](https://img.shields.io/badge/MYSQL-6A0DAD&logo=mysql&logoColor=6A0DAD)  
+![MySQL](https://img.shields.io/badge/MYSQL-000000?style=for-the-badge&logo=mysql&logoColor=6A0DAD)  
 
 🛠️ **Tools:**  
 ![Git](https://img.shields.io/badge/Git-000000?style=for-the-badge&logo=git&logoColor=6A0DAD)  
